@@ -2,7 +2,6 @@
 using FileCurator.Registration;
 using Mirage.Registration;
 using SerialBox.Registration;
-using Valkyrie.Registration;
 
 namespace TestFountain.Registration
 {
@@ -20,7 +19,6 @@ namespace TestFountain.Registration
         {
             return bootstrapper.AddAssembly(typeof(CanisterMethods).Assembly)
                                 .RegisterFileCurator()
-                                .RegisterValkyrie()
                                 .RegisterMirage()
                                 .RegisterSerialBox();
         }

@@ -9,7 +9,6 @@
     <PackageReference Include="Mirage" Version="2.0.8" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="SerialBox" Version="2.0.2" />
-    <PackageReference Include="Valkyrie" Version="2.0.4" />
     <PackageReference Include="xunit.core" Version="2.4.0" />
   </ItemGroup>
 

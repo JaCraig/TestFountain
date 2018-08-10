@@ -1,7 +1,24 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <BuildNumber Condition=" '$(APPVEYOR_BUILD_NUMBER)' != '' ">$(APPVEYOR_BUILD_NUMBER)</BuildNumber>
+    <!-- for AppVeyor -->
+    <BuildNumber Condition=" '$(BUILD_NUMBER)' != '' ">$(BUILD_NUMBER)</BuildNumber>
+    <!-- for Team City -->
+    <BuildNumber Condition=" '$(BuildNumber)' == '' ">0</BuildNumber>
+    <!-- if not set -->
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>James Craig</Authors>
+    <Company />
+    <Description>TestFountain is a set of addons/extensions for xUnit.net to help with things like data generation.</Description>
+    <Copyright></Copyright>
+    <PackageLicenseUrl>https://github.com/JaCraig/TestFountain/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/JaCraig/TestFountain</PackageProjectUrl>
+    <PackageTags>xUnit.net;Random;addon</PackageTags>
+    <Version>1.0.$(BuildNumber)</Version>
+    <AssemblyName>TestFountain</AssemblyName>
+    <PackageId>TestFountain</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

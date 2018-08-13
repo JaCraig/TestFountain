@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FileCurator;
+using System;
 using System.Reflection;
 using TestFountain.Registration;
 using Xunit;
@@ -24,6 +25,8 @@ namespace TestFountain.Tests.Fixtures
 
         public void Dispose()
         {
+            new DirectoryInfo("./TestFountain/SavedTests/TestFountain.Tests.Generator/").Delete();
+            new DirectoryInfo("./TestFountain/SavedTests/TestFountain.Tests.DataSources/").Delete();
         }
     }
 }

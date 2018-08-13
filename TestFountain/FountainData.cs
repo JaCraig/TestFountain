@@ -1,4 +1,22 @@
-﻿using System;
+﻿/*
+Copyright 2018 James Craig
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+using BigBook;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -31,6 +49,7 @@ namespace TestFountain
             Count = count;
             MaxDuration = maxDuration;
             Finished = false;
+            PreviousItems = new List<object[]>();
         }
 
         /// <summary>
@@ -61,7 +80,13 @@ namespace TestFountain
         /// Gets or sets the generator.
         /// </summary>
         /// <value>The generator.</value>
-        private GeneratorManager Manager { get; set; }
+        private GeneratorManager Manager { get; }
+
+        /// <summary>
+        /// Gets or sets the previous items.
+        /// </summary>
+        /// <value>The previous items.</value>
+        private List<object[]> PreviousItems { get; }
 
         /// <summary>
         /// Returns the data to be used to test the theory.
@@ -91,11 +116,15 @@ namespace TestFountain
                     yield return PreviousData[x];
                 }
 
-                for (int x = PreviousDataCount; x < Count; ++x)
+                for (int x = PreviousDataCount; x < Count;)
                 {
                     Data = Manager.Next(Parameters);
-                    DataSource.Save(testMethod, Data);
-                    yield return Data;
+                    if (PreviousItems.AddIfUnique(Same, Data))
+                    {
+                        DataSource.Save(testMethod, Data);
+                        yield return Data;
+                        ++x;
+                    }
                     if (Finished)
                         break;
                 }
@@ -111,6 +140,28 @@ namespace TestFountain
         private void InternalTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
             Finished = true;
+        }
+
+        /// <summary>
+        /// Determines if the 2 arrays are the same.
+        /// </summary>
+        /// <param name="value1">The value1.</param>
+        /// <param name="value2">The value2.</param>
+        /// <returns>True if they are, false otherwise.</returns>
+        private bool Same(object[] value1, object[] value2)
+        {
+            if (value1 == null || value2 == null)
+                return false;
+            if (value1.Length != value2.Length)
+                return false;
+            for (int x = 0; x < value1.Length; ++x)
+            {
+                var Value1 = JsonConvert.SerializeObject(value1[x]);
+                var Value2 = JsonConvert.SerializeObject(value2[x]);
+                if (Value1 != Value2)
+                    return false;
+            }
+            return true;
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+  
   <PropertyGroup>
     <BuildNumber Condition=" '$(APPVEYOR_BUILD_NUMBER)' != '' ">$(APPVEYOR_BUILD_NUMBER)</BuildNumber>
     <!-- for AppVeyor -->
@@ -9,16 +9,24 @@
     <!-- if not set -->
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Authors>James Craig</Authors>
     <Company />
     <Description>TestFountain is a set of addons/extensions for xUnit.net to help with things like data generation.</Description>
-    <Copyright></Copyright>
     <PackageLicenseUrl>https://github.com/JaCraig/TestFountain/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/JaCraig/TestFountain</PackageProjectUrl>
-    <PackageTags>xUnit.net;Random;addon</PackageTags>
+    <PackageTags>xUnit;Random;addon</PackageTags>
     <Version>1.0.$(BuildNumber)</Version>
-    <AssemblyName>TestFountain</AssemblyName>
-    <PackageId>TestFountain</PackageId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+    <DocumentationFile>bin\Debug\netstandard2.0\TestFountain.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+    <DocumentationFile>bin\Release\netstandard2.0\TestFountain.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,7 +34,7 @@
     <PackageReference Include="Mirage" Version="2.0.8" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="SerialBox" Version="2.0.2" />
-    <PackageReference Include="xunit.core" Version="2.4.0" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.0" />
   </ItemGroup>
 
 </Project>

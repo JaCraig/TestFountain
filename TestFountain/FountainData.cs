@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Timers;
+using TestFountain.DataSources;
 using TestFountain.DataSources.Interfaces;
 using TestFountain.Generator;
 using Xunit.Sdk;
@@ -44,8 +45,7 @@ namespace TestFountain
             Manager = Canister.Builder.Bootstrapper?.Resolve<GeneratorManager>();
             var DataSources = Canister.Builder.Bootstrapper?.ResolveAll<IDatasource>();
 
-            DataSource = DataSources.FirstOrDefault(x => x.GetType().Name.IndexOf("TESTFOUNTAIN", StringComparison.OrdinalIgnoreCase) < 0)
-                ?? DataSources.FirstOrDefault(x => x.GetType().Name.IndexOf("TESTFOUNTAIN", StringComparison.OrdinalIgnoreCase) >= 0);
+            DataSource = DataSources.FirstOrDefault(x => !(x is DefaultDataSource)) ?? DataSources.FirstOrDefault(x => x is DefaultDataSource);
             Count = count;
             MaxDuration = maxDuration;
             Finished = false;

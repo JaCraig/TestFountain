@@ -55,10 +55,10 @@ namespace TestFountain.Generator
         /// </summary>
         /// <param name="parameters">The parameters.</param>
         /// <returns>The values.</returns>
-        public object[] Next(ParameterInfo[] parameters)
+        public object?[] Next(ParameterInfo[] parameters)
         {
-            parameters = parameters ?? new ParameterInfo[0];
-            object[] Data = new object[parameters.Length];
+            parameters ??= System.Array.Empty<ParameterInfo>();
+            object?[] Data = new object?[parameters.Length];
             IGenerator[] LocalGenerators = Generators.ToArray();
             for (int i = 0, maxLength = parameters.Length; i < maxLength; i++)
             {

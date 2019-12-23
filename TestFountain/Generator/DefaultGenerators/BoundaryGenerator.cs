@@ -49,13 +49,13 @@ namespace TestFountain.Generator.DefaultGenerators
         /// Gets or sets the maximum.
         /// </summary>
         /// <value>The maximum.</value>
-        private Dictionary<Type, object> Max { get; set; }
+        private Dictionary<Type, object>? Max { get; set; }
 
         /// <summary>
         /// Gets or sets the minimum.
         /// </summary>
         /// <value>The minimum.</value>
-        private Dictionary<Type, object> Min { get; set; }
+        private Dictionary<Type, object>? Min { get; set; }
 
         /// <summary>
         /// Determines whether this instance can generate the specified parameter.
@@ -68,7 +68,7 @@ namespace TestFountain.Generator.DefaultGenerators
         {
             return !parameter.HasDefaultValue
                 && parameter.GetCustomAttribute<ValidationAttribute>() == null
-                && Max.ContainsKey(parameter.ParameterType);
+                && (Max?.ContainsKey(parameter.ParameterType) ?? false);
         }
 
         /// <summary>
@@ -78,7 +78,7 @@ namespace TestFountain.Generator.DefaultGenerators
         /// <returns>The next object.</returns>
         public object Next(ParameterInfo parameter)
         {
-            return Random.Next<bool>() ? Max[parameter.ParameterType] : Min[parameter.ParameterType];
+            return Random.Next<bool>() ? (Max?[parameter.ParameterType] ?? false) : (Min?[parameter.ParameterType] ?? false);
         }
 
         /// <summary>

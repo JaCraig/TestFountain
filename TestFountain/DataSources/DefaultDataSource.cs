@@ -44,7 +44,7 @@ namespace TestFountain.DataSources
         /// Gets the data directory.
         /// </summary>
         /// <value>The data directory.</value>
-        private static string DataDirectory = "./TestFountain/SavedTests/";
+        private const string DataDirectory = "./TestFountain/SavedTests/";
 
         /// <summary>
         /// Gets the serial box.
@@ -57,17 +57,17 @@ namespace TestFountain.DataSources
         /// </summary>
         /// <param name="method">The method.</param>
         /// <returns>The list of data for the method.</returns>
-        public List<object[]> Read(MethodInfo method)
+        public List<object?[]> Read(MethodInfo method)
         {
             var Parameters = method.GetParameters();
             if (Parameters.Any(x => x.ParameterType.IsInterface))
-                return new List<object[]>();
+                return new List<object?[]>();
 
-            var Results = new List<object[]>();
+            var Results = new List<object?[]>();
             var DataDirectoryInfo = GetDirectory(DataDirectory, method);
             foreach (var Directory in DataDirectoryInfo.EnumerateDirectories())
             {
-                var TempResult = new object[Parameters.Length];
+                var TempResult = new object?[Parameters.Length];
                 for (int x = 0; x < Parameters.Length; ++x)
                 {
                     var File = new FileInfo(Directory.FullName + "/" + x + ".json");
@@ -84,7 +84,7 @@ namespace TestFountain.DataSources
         /// </summary>
         /// <param name="method">The method.</param>
         /// <param name="paramData">The parameter data.</param>
-        public void Save(MethodInfo method, object[] paramData)
+        public void Save(MethodInfo method, object?[] paramData)
         {
             var Parameters = method.GetParameters();
             if (Parameters.Any(x => x.ParameterType.IsInterface))
@@ -95,7 +95,7 @@ namespace TestFountain.DataSources
             for (int x = 0; x < Parameters.Length; ++x)
             {
                 var File = new FileInfo(DataDirectoryInfo.FullName + "/" + x + ".json");
-                File.Write(SerialBox.Serialize<string>(paramData[x], Parameters[x].ParameterType, SerializationType.JSON));
+                File.Write(SerialBox.Serialize<string>(paramData[x]!, Parameters[x].ParameterType, SerializationType.JSON));
             }
         }
 

@@ -44,9 +44,9 @@ namespace TestFountain.Generator.DefaultGenerators
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         /// <returns>The next object.</returns>
-        public object Next(ParameterInfo parameter)
+        public object? Next(ParameterInfo parameter)
         {
-            return ((object)null).To(parameter.ParameterType, null);
+            return ((object?)null).To(parameter.ParameterType, null);
         }
     }
 }

@@ -33,7 +33,7 @@ namespace TestFountain
     /// </summary>
     /// <seealso cref="DataAttribute"/>
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
-    public class FountainDataAttribute : DataAttribute
+    public sealed class FountainDataAttribute : DataAttribute
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="FountainDataAttribute"/> class.
@@ -49,7 +49,7 @@ namespace TestFountain
             Count = count;
             MaxDuration = maxDuration;
             Finished = false;
-            PreviousItems = new List<object[]>();
+            PreviousItems = new List<object?[]>();
         }
 
         /// <summary>
@@ -80,13 +80,13 @@ namespace TestFountain
         /// Gets or sets the generator.
         /// </summary>
         /// <value>The generator.</value>
-        private GeneratorManager Manager { get; }
+        private GeneratorManager? Manager { get; }
 
         /// <summary>
         /// Gets or sets the previous items.
         /// </summary>
         /// <value>The previous items.</value>
-        private List<object[]> PreviousItems { get; }
+        private List<object?[]> PreviousItems { get; }
 
         /// <summary>
         /// Returns the data to be used to test the theory.
@@ -96,40 +96,38 @@ namespace TestFountain
         /// One or more sets of theory data. Each invocation of the test method is represented by a
         /// single object array.
         /// </returns>
-        public override IEnumerable<object[]> GetData(MethodInfo testMethod)
+        public override IEnumerable<object?[]> GetData(MethodInfo testMethod)
         {
-            if (Manager == null)
+            if (Manager is null)
                 throw new ArgumentNullException(nameof(Manager));
 
             var Parameters = testMethod.GetParameters();
-            var Data = new object[Parameters.Length];
+            var Data = new object?[Parameters.Length];
             Finished = false;
-            using (var InternalTimer = new Timer(MaxDuration))
+            using var InternalTimer = new Timer(MaxDuration);
+            InternalTimer.Elapsed += InternalTimer_Elapsed;
+            InternalTimer?.Start();
+
+            var PreviousData = DataSource.Read(testMethod);
+            var PreviousDataCount = Count <= PreviousData.Count ? Count : PreviousData.Count;
+            for (int x = 0; x < PreviousDataCount; ++x)
             {
-                InternalTimer.Elapsed += InternalTimer_Elapsed;
-                InternalTimer?.Start();
-
-                var PreviousData = DataSource.Read(testMethod);
-                var PreviousDataCount = Count <= PreviousData.Count ? Count : PreviousData.Count;
-                for (int x = 0; x < PreviousDataCount; ++x)
-                {
-                    yield return PreviousData[x];
-                }
-
-                for (int x = PreviousDataCount; x < Count;)
-                {
-                    Data = Manager.Next(Parameters);
-                    if (PreviousItems.AddIfUnique(Same, Data))
-                    {
-                        DataSource.Save(testMethod, Data);
-                        yield return Data;
-                        ++x;
-                    }
-                    if (Finished)
-                        break;
-                }
-                InternalTimer.Stop();
+                yield return PreviousData[x];
             }
+
+            for (int x = PreviousDataCount; x < Count;)
+            {
+                Data = Manager.Next(Parameters);
+                if (PreviousItems.AddIfUnique(Same, Data))
+                {
+                    DataSource.Save(testMethod, Data);
+                    yield return Data;
+                    ++x;
+                }
+                if (Finished)
+                    break;
+            }
+            InternalTimer?.Stop();
         }
 
         /// <summary>
@@ -148,7 +146,7 @@ namespace TestFountain
         /// <param name="value1">The value1.</param>
         /// <param name="value2">The value2.</param>
         /// <returns>True if they are, false otherwise.</returns>
-        private bool Same(object[] value1, object[] value2)
+        private bool Same(object?[] value1, object?[] value2)
         {
             if (value1 == null || value2 == null)
                 return false;

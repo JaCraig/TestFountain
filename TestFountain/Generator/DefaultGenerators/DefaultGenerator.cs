@@ -58,7 +58,7 @@ namespace TestFountain.Generator.DefaultGenerators
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         /// <returns>The next object.</returns>
-        public object Next(ParameterInfo parameter)
+        public object? Next(ParameterInfo parameter)
         {
             var ReturnValue = RandomObj.Next(parameter.ParameterType);
             var Validation = parameter.GetCustomAttribute<ValidationAttribute>();

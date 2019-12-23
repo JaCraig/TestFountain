@@ -37,6 +37,6 @@ namespace TestFountain.Generator.Interfaces
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         /// <returns>The next object.</returns>
-        object Next(ParameterInfo parameter);
+        object? Next(ParameterInfo parameter);
     }
 }

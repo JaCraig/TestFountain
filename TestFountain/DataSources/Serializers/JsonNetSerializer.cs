@@ -57,7 +57,7 @@ namespace TestFountain.DataSources.Serializers
         /// <param name="objectType">Object type</param>
         /// <param name="data">Data to deserialize</param>
         /// <returns>The deserialized data</returns>
-        public override object Deserialize(Type objectType, string data)
+        public override object? Deserialize(Type objectType, string data)
         {
             return JsonConvert.DeserializeObject(data, objectType);
         }
@@ -68,7 +68,7 @@ namespace TestFountain.DataSources.Serializers
         /// <param name="objectType">Object type</param>
         /// <param name="data">Data to serialize</param>
         /// <returns>The serialized data</returns>
-        public override string Serialize(Type objectType, object data)
+        public override string Serialize(Type objectType, object? data)
         {
             return JsonConvert.SerializeObject(data);
         }

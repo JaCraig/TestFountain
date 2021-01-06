@@ -1,7 +1,6 @@
 ﻿using FileCurator;
+using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Reflection;
-using TestFountain.Registration;
 using Xunit;
 
 namespace TestFountain.Tests.Fixtures
@@ -17,9 +16,7 @@ namespace TestFountain.Tests.Fixtures
         {
             if (Canister.Builder.Bootstrapper == null)
             {
-                Canister.Builder.CreateContainer(null, typeof(CanisterFixture).GetTypeInfo().Assembly)
-                   .RegisterTestFountain()
-                   .Build();
+                new ServiceCollection().AddCanisterModules(configure => configure.RegisterTestFountain().AddAssembly(typeof(CanisterFixture).Assembly));
             }
         }
 

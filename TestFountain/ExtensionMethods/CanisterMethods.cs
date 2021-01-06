@@ -15,11 +15,8 @@ limitations under the License.
 */
 
 using Canister.Interfaces;
-using FileCurator.Registration;
-using Mirage.Registration;
-using SerialBox.Registration;
 
-namespace TestFountain.Registration
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// Canister methods
@@ -31,9 +28,9 @@ namespace TestFountain.Registration
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
         /// <returns>The bootstrapper.</returns>
-        public static IBootstrapper RegisterTestFountain(this IBootstrapper bootstrapper)
+        public static ICanisterConfiguration? RegisterTestFountain(this ICanisterConfiguration? bootstrapper)
         {
-            return bootstrapper.AddAssembly(typeof(CanisterMethods).Assembly)
+            return bootstrapper?.AddAssembly(typeof(CanisterMethods).Assembly)
                                 .RegisterFileCurator()
                                 .RegisterMirage()
                                 .RegisterSerialBox();

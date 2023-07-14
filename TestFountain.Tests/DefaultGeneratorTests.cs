@@ -16,7 +16,7 @@ namespace TestFountain.Tests
     {
         [Theory]
         [FountainData(100, 1000)]
-        public void Test([Range(1, 100)]int Value1)
+        public void Test([Range(1, 100)] int Value1)
         {
             Value1.Should().BeInRange(1, 100);
         }
@@ -40,7 +40,7 @@ namespace TestFountain.Tests
             if (Value1 == null)
                 return;
             Value1.Method().Returns(1);
-            Value1.Method().Should().Equals(1);
+            Value1.Method().Should().Be(1);
         }
     }
 

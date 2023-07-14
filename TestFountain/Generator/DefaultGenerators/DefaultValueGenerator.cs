@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 using BigBook;
+using ObjectCartographer;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using TestFountain.Generator.Interfaces;

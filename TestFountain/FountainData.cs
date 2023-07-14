@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 using BigBook;
+using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -42,8 +43,9 @@ namespace TestFountain
         /// <param name="maxDuration">The duration in ms. (overrides the count)</param>
         public FountainDataAttribute(int count, int maxDuration = int.MaxValue)
         {
-            Manager = Canister.Builder.Bootstrapper?.Resolve<GeneratorManager>();
-            var DataSources = Canister.Builder.Bootstrapper?.ResolveAll<IDatasource>();
+            var Services = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
+            Manager = Services.GetService<GeneratorManager>();
+            var DataSources = Services.GetServices<IDatasource>();
 
             DataSource = DataSources.FirstOrDefault(x => !(x is DefaultDataSource)) ?? DataSources.FirstOrDefault(x => x is DefaultDataSource);
             Count = count;

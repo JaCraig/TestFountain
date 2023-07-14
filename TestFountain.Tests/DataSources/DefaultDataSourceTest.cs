@@ -1,5 +1,6 @@
 ﻿using FileCurator;
 using FluentAssertions;
+using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
 using System.Linq;
 using TestFountain.DataSources;
@@ -13,7 +14,7 @@ namespace TestFountain.Tests.DataSources
         [Fact]
         public void Creation()
         {
-            var TestObject = new DefaultDataSource(Canister.Builder.Bootstrapper.Resolve<SerialBox.SerialBox>());
+            var TestObject = new DefaultDataSource(Services.GetService<SerialBox.SerialBox>());
             TestObject.Should().NotBeNull();
             TestObject.SerialBox.Should().NotBeNull();
         }
@@ -21,7 +22,7 @@ namespace TestFountain.Tests.DataSources
         [Fact]
         public void Read()
         {
-            var TestObject = new DefaultDataSource(Canister.Builder.Bootstrapper.Resolve<SerialBox.SerialBox>());
+            var TestObject = new DefaultDataSource(Services.GetService<SerialBox.SerialBox>());
             TestObject.Save(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"), new object[] { "A" });
             TestObject.Save(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"), new object[] { "B" });
             TestObject.Save(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"), new object[] { "C" });
@@ -38,12 +39,12 @@ namespace TestFountain.Tests.DataSources
         [Fact]
         public void Save()
         {
-            var TestObject = new DefaultDataSource(Canister.Builder.Bootstrapper.Resolve<SerialBox.SerialBox>());
+            var TestObject = new DefaultDataSource(Services.GetService<SerialBox.SerialBox>());
             TestObject.Save(typeof(DefaultDataSourceTestClassSave).GetMethod("TestMethod"), new object[] { "A" });
             var TestDataDirectory = new DirectoryInfo("./TestFountain/SavedTests/TestFountain.Tests.DataSources/DefaultDataSourceTest.DefaultDataSourceTestClassSave/TestMethod/");
             TestDataDirectory.EnumerateDirectories().Should().ContainSingle();
             TestDataDirectory.EnumerateFiles(options: System.IO.SearchOption.AllDirectories).Should().ContainSingle();
-            TestDataDirectory.EnumerateFiles(options: System.IO.SearchOption.AllDirectories).FirstOrDefault()?.Read().Should().Equals("A");
+            TestDataDirectory.EnumerateFiles(options: System.IO.SearchOption.AllDirectories).FirstOrDefault()?.Read().Should().Be("\"A\"");
         }
 
         private class DefaultDataSourceTestClassRead

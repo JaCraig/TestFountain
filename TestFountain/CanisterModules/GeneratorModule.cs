@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 using Canister.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 using TestFountain.DataSources.Interfaces;
 using TestFountain.Generator;
 using TestFountain.Generator.Interfaces;
@@ -33,16 +34,15 @@ namespace TestFountain.CanisterModules
         public int Order => 1;
 
         /// <summary>
-        /// Loads the module using the bootstrapper
+        /// Loads the module using the service collection.
         /// </summary>
-        /// <param name="bootstrapper">The bootstrapper.</param>
-        public void Load(IBootstrapper bootstrapper)
+        /// <param name="serviceDescriptors">The service descriptors.</param>
+        public void Load(IServiceCollection serviceDescriptors)
         {
-            if (bootstrapper == null)
-                return;
-            bootstrapper.RegisterAll<IGenerator>();
-            bootstrapper.RegisterAll<IDatasource>();
-            bootstrapper.Register<GeneratorManager>();
+            serviceDescriptors
+                ?.AddAllTransient<IGenerator>()
+                ?.AddAllTransient<IDatasource>()
+                ?.AddTransient<GeneratorManager>();
         }
     }
 }

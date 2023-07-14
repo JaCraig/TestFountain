@@ -14,7 +14,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using Canister.Interfaces;
 using Newtonsoft.Json;
 using SerialBox.BaseClasses;
 using System;
@@ -27,15 +26,6 @@ namespace TestFountain.DataSources.Serializers
     /// <seealso cref="SerializerBase{String}"/>
     public class JsonNetSerializer : SerializerBase<string>
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="JsonNetSerializer"/> class.
-        /// </summary>
-        /// <param name="bootstrapper">The bootstrapper.</param>
-        public JsonNetSerializer(IBootstrapper bootstrapper)
-            : base(bootstrapper)
-        {
-        }
-
         /// <summary>
         /// Content type (MIME type)
         /// </summary>

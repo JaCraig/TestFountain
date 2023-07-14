@@ -14,11 +14,12 @@ namespace TestFountain.Tests.Fixtures
     {
         public CanisterFixture()
         {
-            if (Canister.Builder.Bootstrapper == null)
-            {
-                new ServiceCollection().AddCanisterModules(configure => configure.RegisterTestFountain().AddAssembly(typeof(CanisterFixture).Assembly));
-            }
+            if (Services is not null)
+                return;
+            Services = new ServiceCollection().AddCanisterModules(configure => configure.RegisterTestFountain().AddAssembly(typeof(CanisterFixture).Assembly)).BuildServiceProvider();
         }
+
+        private IServiceProvider Services { get; set; }
 
         public void Dispose()
         {

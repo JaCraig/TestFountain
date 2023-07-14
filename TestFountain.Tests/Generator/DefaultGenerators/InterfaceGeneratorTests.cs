@@ -34,7 +34,7 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
             ITestInterface Result = (ITestInterface)TestObject.Next(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]);
             Result.Value.Should().NotBeNull();
             Result.Method().Returns(1);
-            Result.Method().Should().Equals(1);
+            Result.Method().Should().Be(1);
         }
 
         public interface ITestInterface

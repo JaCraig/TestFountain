@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFountain", "TestFountai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFountain.Tests", "TestFountain.Tests\TestFountain.Tests.csproj", "{E07EA49D-F9C7-40A3-AF39-28DD5DD2B643}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFountain.Example", "TestFountain.Example\TestFountain.Example.csproj", "{73F903BB-E6A6-4B42-871C-6F8D25619A8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFountain.Example", "TestFountain.Example\TestFountain.Example.csproj", "{73F903BB-E6A6-4B42-871C-6F8D25619A8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93043F1F-3518-43E6-B004-39ECDD3969CE}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

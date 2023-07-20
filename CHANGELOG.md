@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.5"></a>
+## [2.0.5](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.5) (2023-7-20)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([a2b3f38](https://www.github.com/JaCraig/TestFountain/commit/a2b3f387fc94fdbda399a537e27fad1dddb4e8c3))
+
+### Other
+
+* Merge pull request #3 from JaCraig/dependabot/github_actions/dependencies-0717129e0a ([7d50404](https://www.github.com/JaCraig/TestFountain/commit/7d50404b71092ef2722c74329f0d8c58bed89f4a))
+* Merge pull request #4 from JaCraig/dependabot/nuget/dependencies-dd930e6650 ([0c71d98](https://www.github.com/JaCraig/TestFountain/commit/0c71d989307bd7949b5219c12c03d054e1e6e65b))
+* Adding editorconfig ([b2e4df3](https://www.github.com/JaCraig/TestFountain/commit/b2e4df3cd72aaf590b958e92b1598245b1db7906))
+* bump the dependencies group with 2 updates ([e98a8ab](https://www.github.com/JaCraig/TestFountain/commit/e98a8ab597d6eea65b89388d91e4deba67d38bc2))
+* dependabot update ([29dd791](https://www.github.com/JaCraig/TestFountain/commit/29dd7912a9a52b7a6d7af9c173f3ea4ea8876f81))
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.4) (2023-7-14)
 

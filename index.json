@@ -1,9 +1,4 @@
 {
-  "api/index.html": {
-    "href": "api/index.html",
-    "title": "Welcome | TestFountain API Reference",
-    "keywords": "Welcome Welcome to the API browser."
-  },
   "api/Microsoft.Extensions.DependencyInjection.CanisterMethods.html": {
     "href": "api/Microsoft.Extensions.DependencyInjection.CanisterMethods.html",
     "title": "Class CanisterMethods | TestFountain API Reference",
@@ -29,30 +24,30 @@
     "title": "Class DefaultDataSource | TestFountain API Reference",
     "keywords": "Class DefaultDataSource Default data source. Inheritance object DefaultDataSource Implements IDatasource Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TestFountain.DataSources Assembly: TestFountain.dll Syntax public class DefaultDataSource : IDatasource Constructors | Improve this Doc View Source DefaultDataSource(SerialBox) Initializes a new instance of the DefaultDataSource class. Declaration public DefaultDataSource(SerialBox serialBox) Parameters Type Name Description SerialBox serialBox The serial box. See Also IDatasource Properties | Improve this Doc View Source SerialBox Gets the serial box. Declaration public SerialBox SerialBox { get; } Property Value Type Description SerialBox The serial box. See Also IDatasource Methods | Improve this Doc View Source Read(MethodInfo) Retrieves the data for the specified method. Declaration public List<object?[]> Read(MethodInfo method) Parameters Type Name Description MethodInfo method The method. Returns Type Description List<object[]> The list of data for the method. See Also IDatasource | Improve this Doc View Source Save(MethodInfo, object?[]) Saves the specified param data for the method. Declaration public void Save(MethodInfo method, object?[] paramData) Parameters Type Name Description MethodInfo method The method. object[] paramData The parameter data. See Also IDatasource Implements IDatasource See Also IDatasource"
   },
-  "api/TestFountain.DataSources.html": {
-    "href": "api/TestFountain.DataSources.html",
-    "title": "Namespace TestFountain.DataSources | TestFountain API Reference",
-    "keywords": "Namespace TestFountain.DataSources Classes DefaultDataSource Default data source."
+  "api/TestFountain.DataSources.Interfaces.IDatasource.html": {
+    "href": "api/TestFountain.DataSources.Interfaces.IDatasource.html",
+    "title": "Interface IDatasource | TestFountain API Reference",
+    "keywords": "Interface IDatasource Data source interface Namespace: TestFountain.DataSources.Interfaces Assembly: TestFountain.dll Syntax public interface IDatasource Methods | Improve this Doc View Source Read(MethodInfo) Retrieves the data for the specified method. Declaration List<object?[]> Read(MethodInfo method) Parameters Type Name Description MethodInfo method The method. Returns Type Description List<object[]> The list of data for the method. | Improve this Doc View Source Save(MethodInfo, object?[]) Saves the specified param data for the method. Declaration void Save(MethodInfo method, object?[] paramData) Parameters Type Name Description MethodInfo method The method. object[] paramData The parameter data."
   },
   "api/TestFountain.DataSources.Interfaces.html": {
     "href": "api/TestFountain.DataSources.Interfaces.html",
     "title": "Namespace TestFountain.DataSources.Interfaces | TestFountain API Reference",
     "keywords": "Namespace TestFountain.DataSources.Interfaces Interfaces IDatasource Data source interface"
   },
-  "api/TestFountain.DataSources.Interfaces.IDatasource.html": {
-    "href": "api/TestFountain.DataSources.Interfaces.IDatasource.html",
-    "title": "Interface IDatasource | TestFountain API Reference",
-    "keywords": "Interface IDatasource Data source interface Namespace: TestFountain.DataSources.Interfaces Assembly: TestFountain.dll Syntax public interface IDatasource Methods | Improve this Doc View Source Read(MethodInfo) Retrieves the data for the specified method. Declaration List<object?[]> Read(MethodInfo method) Parameters Type Name Description MethodInfo method The method. Returns Type Description List<object[]> The list of data for the method. | Improve this Doc View Source Save(MethodInfo, object?[]) Saves the specified param data for the method. Declaration void Save(MethodInfo method, object?[] paramData) Parameters Type Name Description MethodInfo method The method. object[] paramData The parameter data."
+  "api/TestFountain.DataSources.Serializers.JsonNetSerializer.html": {
+    "href": "api/TestFountain.DataSources.Serializers.JsonNetSerializer.html",
+    "title": "Class JsonNetSerializer | TestFountain API Reference",
+    "keywords": "Class JsonNetSerializer JSON.Net Serializer Inheritance object SerializerBase<string> JsonNetSerializer Implements ISerializer<string> ISerializer Inherited Members SerializerBase<string>.ReturnType object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TestFountain.DataSources.Serializers Assembly: TestFountain.dll Syntax public class JsonNetSerializer : SerializerBase<string>, ISerializer<string>, ISerializer Properties | Improve this Doc View Source ContentType Content type (MIME type) Declaration public override string ContentType { get; } Property Value Type Description string Overrides SerialBox.BaseClasses.SerializerBase<string>.ContentType See Also SerializerBase<T> | Improve this Doc View Source FileType Common file type (extension) Declaration public override string FileType { get; } Property Value Type Description string Overrides SerialBox.BaseClasses.SerializerBase<string>.FileType See Also SerializerBase<T> | Improve this Doc View Source Name Name of the serializer Declaration public override string Name { get; } Property Value Type Description string Overrides SerialBox.BaseClasses.SerializerBase<string>.Name See Also SerializerBase<T> Methods | Improve this Doc View Source Deserialize(Type, string) Deserializes the data Declaration public override object? Deserialize(Type objectType, string data) Parameters Type Name Description Type objectType Object type string data Data to deserialize Returns Type Description object The deserialized data Overrides SerializerBase<string>.Deserialize(Type, string) See Also SerializerBase<T> | Improve this Doc View Source Serialize(Type, object?) Serializes the object Declaration public override string Serialize(Type objectType, object? data) Parameters Type Name Description Type objectType Object type object data Data to serialize Returns Type Description string The serialized data Overrides SerializerBase<string>.Serialize(Type, object) See Also SerializerBase<T> Implements ISerializer<T> ISerializer See Also SerializerBase<T>"
   },
   "api/TestFountain.DataSources.Serializers.html": {
     "href": "api/TestFountain.DataSources.Serializers.html",
     "title": "Namespace TestFountain.DataSources.Serializers | TestFountain API Reference",
     "keywords": "Namespace TestFountain.DataSources.Serializers Classes JsonNetSerializer JSON.Net Serializer"
   },
-  "api/TestFountain.DataSources.Serializers.JsonNetSerializer.html": {
-    "href": "api/TestFountain.DataSources.Serializers.JsonNetSerializer.html",
-    "title": "Class JsonNetSerializer | TestFountain API Reference",
-    "keywords": "Class JsonNetSerializer JSON.Net Serializer Inheritance object SerializerBase<string> JsonNetSerializer Implements ISerializer<string> ISerializer Inherited Members SerializerBase<string>.ReturnType object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TestFountain.DataSources.Serializers Assembly: TestFountain.dll Syntax public class JsonNetSerializer : SerializerBase<string>, ISerializer<string>, ISerializer Properties | Improve this Doc View Source ContentType Content type (MIME type) Declaration public override string ContentType { get; } Property Value Type Description string Overrides SerialBox.BaseClasses.SerializerBase<string>.ContentType See Also SerializerBase<T> | Improve this Doc View Source FileType Common file type (extension) Declaration public override string FileType { get; } Property Value Type Description string Overrides SerialBox.BaseClasses.SerializerBase<string>.FileType See Also SerializerBase<T> | Improve this Doc View Source Name Name of the serializer Declaration public override string Name { get; } Property Value Type Description string Overrides SerialBox.BaseClasses.SerializerBase<string>.Name See Also SerializerBase<T> Methods | Improve this Doc View Source Deserialize(Type, string) Deserializes the data Declaration public override object? Deserialize(Type objectType, string data) Parameters Type Name Description Type objectType Object type string data Data to deserialize Returns Type Description object The deserialized data Overrides SerializerBase<string>.Deserialize(Type, string) See Also SerializerBase<T> | Improve this Doc View Source Serialize(Type, object?) Serializes the object Declaration public override string Serialize(Type objectType, object? data) Parameters Type Name Description Type objectType Object type object data Data to serialize Returns Type Description string The serialized data Overrides SerializerBase<string>.Serialize(Type, object) See Also SerializerBase<T> Implements ISerializer<T> ISerializer See Also SerializerBase<T>"
+  "api/TestFountain.DataSources.html": {
+    "href": "api/TestFountain.DataSources.html",
+    "title": "Namespace TestFountain.DataSources | TestFountain API Reference",
+    "keywords": "Namespace TestFountain.DataSources Classes DefaultDataSource Default data source."
   },
   "api/TestFountain.Exceptions.GeneratorException.html": {
     "href": "api/TestFountain.Exceptions.GeneratorException.html",
@@ -84,11 +79,6 @@
     "title": "Class DefaultValueGenerator | TestFountain API Reference",
     "keywords": "Class DefaultValueGenerator Default value generator Inheritance object DefaultValueGenerator Implements IGenerator Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TestFountain.Generator.DefaultGenerators Assembly: TestFountain.dll Syntax public class DefaultValueGenerator : IGenerator Methods | Improve this Doc View Source CanGenerate(ParameterInfo) Determines whether this instance can generate the specified parameter. Declaration public bool CanGenerate(ParameterInfo parameter) Parameters Type Name Description ParameterInfo parameter The parameter. Returns Type Description bool true if this instance can generate the specified parameter; otherwise, false. See Also IGenerator | Improve this Doc View Source Next(ParameterInfo) Generates the next object of the specified parameter type. Declaration public object? Next(ParameterInfo parameter) Parameters Type Name Description ParameterInfo parameter The parameter. Returns Type Description object The next object. See Also IGenerator Implements IGenerator See Also IGenerator"
   },
-  "api/TestFountain.Generator.DefaultGenerators.html": {
-    "href": "api/TestFountain.Generator.DefaultGenerators.html",
-    "title": "Namespace TestFountain.Generator.DefaultGenerators | TestFountain API Reference",
-    "keywords": "Namespace TestFountain.Generator.DefaultGenerators Classes BoundaryGenerator Boundary generator DefaultGenerator Default generator DefaultValueGenerator Default value generator InterfaceGenerator Interface generator ParameterDefaultValueGenerator Parameter default value generator"
-  },
   "api/TestFountain.Generator.DefaultGenerators.InterfaceGenerator.html": {
     "href": "api/TestFountain.Generator.DefaultGenerators.InterfaceGenerator.html",
     "title": "Class InterfaceGenerator | TestFountain API Reference",
@@ -99,30 +89,40 @@
     "title": "Class ParameterDefaultValueGenerator | TestFountain API Reference",
     "keywords": "Class ParameterDefaultValueGenerator Parameter default value generator Inheritance object ParameterDefaultValueGenerator Implements IGenerator Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TestFountain.Generator.DefaultGenerators Assembly: TestFountain.dll Syntax public class ParameterDefaultValueGenerator : IGenerator Methods | Improve this Doc View Source CanGenerate(ParameterInfo) Determines whether this instance can generate the specified parameter. Declaration public bool CanGenerate(ParameterInfo parameter) Parameters Type Name Description ParameterInfo parameter The parameter. Returns Type Description bool true if this instance can generate the specified parameter; otherwise, false. See Also IGenerator | Improve this Doc View Source Next(ParameterInfo) Generates the next object of the specified parameter type. Declaration public object Next(ParameterInfo parameter) Parameters Type Name Description ParameterInfo parameter The parameter. Returns Type Description object The next object. See Also IGenerator Implements IGenerator See Also IGenerator"
   },
+  "api/TestFountain.Generator.DefaultGenerators.html": {
+    "href": "api/TestFountain.Generator.DefaultGenerators.html",
+    "title": "Namespace TestFountain.Generator.DefaultGenerators | TestFountain API Reference",
+    "keywords": "Namespace TestFountain.Generator.DefaultGenerators Classes BoundaryGenerator Boundary generator DefaultGenerator Default generator DefaultValueGenerator Default value generator InterfaceGenerator Interface generator ParameterDefaultValueGenerator Parameter default value generator"
+  },
   "api/TestFountain.Generator.GeneratorManager.html": {
     "href": "api/TestFountain.Generator.GeneratorManager.html",
     "title": "Class GeneratorManager | TestFountain API Reference",
     "keywords": "Class GeneratorManager Generator manager Inheritance object GeneratorManager Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TestFountain.Generator Assembly: TestFountain.dll Syntax public class GeneratorManager Constructors | Improve this Doc View Source GeneratorManager(IEnumerable<IGenerator>, Random) Initializes a new instance of the GeneratorManager class. Declaration public GeneratorManager(IEnumerable<IGenerator> generators, Random random) Parameters Type Name Description IEnumerable<IGenerator> generators The generators. Random random The random. Properties | Improve this Doc View Source Generators Gets the generators. Declaration public IEnumerable<IGenerator> Generators { get; } Property Value Type Description IEnumerable<IGenerator> The generators. | Improve this Doc View Source Random Gets the random. Declaration public Random Random { get; } Property Value Type Description Random The random. Methods | Improve this Doc View Source Next(ParameterInfo[]) Gets the next set of parameter values. Declaration public object?[] Next(ParameterInfo[] parameters) Parameters Type Name Description ParameterInfo[] parameters The parameters. Returns Type Description object[] The values."
-  },
-  "api/TestFountain.Generator.html": {
-    "href": "api/TestFountain.Generator.html",
-    "title": "Namespace TestFountain.Generator | TestFountain API Reference",
-    "keywords": "Namespace TestFountain.Generator Classes GeneratorManager Generator manager"
-  },
-  "api/TestFountain.Generator.Interfaces.html": {
-    "href": "api/TestFountain.Generator.Interfaces.html",
-    "title": "Namespace TestFountain.Generator.Interfaces | TestFountain API Reference",
-    "keywords": "Namespace TestFountain.Generator.Interfaces Interfaces IGenerator Generator interface."
   },
   "api/TestFountain.Generator.Interfaces.IGenerator.html": {
     "href": "api/TestFountain.Generator.Interfaces.IGenerator.html",
     "title": "Interface IGenerator | TestFountain API Reference",
     "keywords": "Interface IGenerator Generator interface. Namespace: TestFountain.Generator.Interfaces Assembly: TestFountain.dll Syntax public interface IGenerator Methods | Improve this Doc View Source CanGenerate(ParameterInfo) Determines whether this instance can generate the specified parameter. Declaration bool CanGenerate(ParameterInfo parameter) Parameters Type Name Description ParameterInfo parameter The parameter. Returns Type Description bool true if this instance can generate the specified parameter; otherwise, false. | Improve this Doc View Source Next(ParameterInfo) Generates the next object of the specified parameter type. Declaration object? Next(ParameterInfo parameter) Parameters Type Name Description ParameterInfo parameter The parameter. Returns Type Description object The next object."
   },
+  "api/TestFountain.Generator.Interfaces.html": {
+    "href": "api/TestFountain.Generator.Interfaces.html",
+    "title": "Namespace TestFountain.Generator.Interfaces | TestFountain API Reference",
+    "keywords": "Namespace TestFountain.Generator.Interfaces Interfaces IGenerator Generator interface."
+  },
+  "api/TestFountain.Generator.html": {
+    "href": "api/TestFountain.Generator.html",
+    "title": "Namespace TestFountain.Generator | TestFountain API Reference",
+    "keywords": "Namespace TestFountain.Generator Classes GeneratorManager Generator manager"
+  },
   "api/TestFountain.html": {
     "href": "api/TestFountain.html",
     "title": "Namespace TestFountain | TestFountain API Reference",
     "keywords": "Namespace TestFountain Classes FountainDataAttribute Data generator class used in theory methods."
+  },
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "Welcome | TestFountain API Reference",
+    "keywords": "Welcome Welcome to the API browser."
   },
   "articles/intro.html": {
     "href": "articles/intro.html",

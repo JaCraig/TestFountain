@@ -300,15 +300,6 @@ references:
   fullName.vb: TestFountain.Exceptions.GeneratorException.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
   nameWithType: GeneratorException.GeneratorException(SerializationInfo, StreamingContext)
   nameWithType.vb: GeneratorException.New(SerializationInfo, StreamingContext)
-- uid: TestFountain.Exceptions.GeneratorException.#ctor(System.String,System.Exception)
-  name: GeneratorException(string, Exception)
-  href: api/TestFountain.Exceptions.GeneratorException.html#TestFountain_Exceptions_GeneratorException__ctor_System_String_System_Exception_
-  commentId: M:TestFountain.Exceptions.GeneratorException.#ctor(System.String,System.Exception)
-  name.vb: New(String, Exception)
-  fullName: TestFountain.Exceptions.GeneratorException.GeneratorException(string, System.Exception)
-  fullName.vb: TestFountain.Exceptions.GeneratorException.New(String, System.Exception)
-  nameWithType: GeneratorException.GeneratorException(string, Exception)
-  nameWithType.vb: GeneratorException.New(String, Exception)
 - uid: TestFountain.Exceptions.GeneratorException.#ctor(System.String)
   name: GeneratorException(string)
   href: api/TestFountain.Exceptions.GeneratorException.html#TestFountain_Exceptions_GeneratorException__ctor_System_String_
@@ -318,6 +309,15 @@ references:
   fullName.vb: TestFountain.Exceptions.GeneratorException.New(String)
   nameWithType: GeneratorException.GeneratorException(string)
   nameWithType.vb: GeneratorException.New(String)
+- uid: TestFountain.Exceptions.GeneratorException.#ctor(System.String,System.Exception)
+  name: GeneratorException(string, Exception)
+  href: api/TestFountain.Exceptions.GeneratorException.html#TestFountain_Exceptions_GeneratorException__ctor_System_String_System_Exception_
+  commentId: M:TestFountain.Exceptions.GeneratorException.#ctor(System.String,System.Exception)
+  name.vb: New(String, Exception)
+  fullName: TestFountain.Exceptions.GeneratorException.GeneratorException(string, System.Exception)
+  fullName.vb: TestFountain.Exceptions.GeneratorException.New(String, System.Exception)
+  nameWithType: GeneratorException.GeneratorException(string, Exception)
+  nameWithType.vb: GeneratorException.New(String, Exception)
 - uid: TestFountain.Exceptions.GeneratorException.#ctor*
   name: GeneratorException
   href: api/TestFountain.Exceptions.GeneratorException.html#TestFountain_Exceptions_GeneratorException__ctor_

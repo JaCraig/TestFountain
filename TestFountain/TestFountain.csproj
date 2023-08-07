@@ -10,7 +10,7 @@
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/JaCraig/TestFountain</PackageProjectUrl>
     <PackageTags>xUnit;Random;addon</PackageTags>
-    <Version>2.0.12</Version>
+    <Version>2.0.13</Version>
     <Nullable>enable</Nullable>
     <Title>TestFountain</Title>
     <Copyright>Copyright © James Craig 2020</Copyright>

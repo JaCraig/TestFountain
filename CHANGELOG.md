@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.17"></a>
+## [2.0.17](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.17) (2023-8-17)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([90b5f37](https://www.github.com/JaCraig/TestFountain/commit/90b5f37d298c2f5093522eeb1d956f9b68c496e6))
+
+### Other
+
+* Merge pull request #16 from JaCraig/dependabot/nuget/dependencies-7c5f3fc8cd ([a511b7c](https://www.github.com/JaCraig/TestFountain/commit/a511b7c1b0af100fef55b0253028a42c2b864077))
+* Merge pull request #17 from JaCraig/dependabot/nuget/dependencies-4d447cf8bb ([f0c3489](https://www.github.com/JaCraig/TestFountain/commit/f0c3489b74669a38ada3823de108e19af1ec09f1))
+* bump the dependencies group with 1 update ([5e8e39a](https://www.github.com/JaCraig/TestFountain/commit/5e8e39a07aeb32720269074d053202740fc7df5c))
+* Update dependabot.yml ([4f6dcac](https://www.github.com/JaCraig/TestFountain/commit/4f6dcacc41d85dfb75adb074818301c5870f1b57))
+
 <a name="2.0.16"></a>
 ## [2.0.16](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.16) (2023-8-9)
 

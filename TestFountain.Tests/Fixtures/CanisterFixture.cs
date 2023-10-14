@@ -19,12 +19,13 @@ namespace TestFountain.Tests.Fixtures
             Services = new ServiceCollection().AddCanisterModules(configure => configure.RegisterTestFountain().AddAssembly(typeof(CanisterFixture).Assembly)).BuildServiceProvider();
         }
 
-        private IServiceProvider Services { get; set; }
+        private IServiceProvider Services { get; }
 
         public void Dispose()
         {
             new DirectoryInfo("./TestFountain/SavedTests/TestFountain.Tests.Generator/").Delete();
             new DirectoryInfo("./TestFountain/SavedTests/TestFountain.Tests.DataSources/").Delete();
+            GC.SuppressFinalize(this);
         }
     }
 }

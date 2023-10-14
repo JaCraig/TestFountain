@@ -43,11 +43,13 @@ namespace TestFountain
         /// <param name="maxDuration">The duration in ms. (overrides the count)</param>
         public FountainDataAttribute(int count, int maxDuration = int.MaxValue)
         {
-            var Services = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
+            ServiceProvider? Services = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
+            if (Services is null)
+                return;
             Manager = Services.GetService<GeneratorManager>();
-            var DataSources = Services.GetServices<IDatasource>();
+            IEnumerable<IDatasource> DataSources = Services.GetServices<IDatasource>();
 
-            DataSource = DataSources.FirstOrDefault(x => !(x is DefaultDataSource)) ?? DataSources.FirstOrDefault(x => x is DefaultDataSource);
+            DataSource = DataSources.FirstOrDefault(x => x is not DefaultDataSource) ?? DataSources.FirstOrDefault(x => x is DefaultDataSource);
             Count = count;
             MaxDuration = maxDuration;
             Finished = false;
@@ -70,7 +72,7 @@ namespace TestFountain
         /// Gets the data source.
         /// </summary>
         /// <value>The data source.</value>
-        private IDatasource DataSource { get; }
+        private IDatasource? DataSource { get; }
 
         /// <summary>
         /// Gets or sets a value indicating whether this <see cref="FountainDataAttribute"/> is finished.
@@ -88,7 +90,7 @@ namespace TestFountain
         /// Gets or sets the previous items.
         /// </summary>
         /// <value>The previous items.</value>
-        private List<object?[]> PreviousItems { get; }
+        private List<object?[]> PreviousItems { get; } = new List<object?[]>();
 
         /// <summary>
         /// Returns the data to be used to test the theory.
@@ -100,36 +102,38 @@ namespace TestFountain
         /// </returns>
         public override IEnumerable<object?[]> GetData(MethodInfo testMethod)
         {
-            if (Manager is null)
-                throw new ArgumentNullException(nameof(Manager));
+            return Manager is null ? throw new NullReferenceException(nameof(Manager)) : GetData2();
 
-            var Parameters = testMethod.GetParameters();
-            var Data = new object?[Parameters.Length];
-            Finished = false;
-            using var InternalTimer = new Timer(MaxDuration);
-            InternalTimer.Elapsed += InternalTimer_Elapsed;
-            InternalTimer?.Start();
-
-            var PreviousData = DataSource.Read(testMethod);
-            var PreviousDataCount = Count <= PreviousData.Count ? Count : PreviousData.Count;
-            for (int x = 0; x < PreviousDataCount; ++x)
+            IEnumerable<object?[]> GetData2()
             {
-                yield return PreviousData[x];
-            }
+                ParameterInfo[] Parameters = testMethod.GetParameters();
+                var Data = new object?[Parameters.Length];
+                Finished = false;
+                using var InternalTimer = new Timer(MaxDuration);
+                InternalTimer.Elapsed += InternalTimer_Elapsed;
+                InternalTimer?.Start();
 
-            for (int x = PreviousDataCount; x < Count;)
-            {
-                Data = Manager.Next(Parameters);
-                if (PreviousItems.AddIfUnique(Same, Data))
+                List<object?[]> PreviousData = DataSource?.Read(testMethod) ?? new List<object?[]>();
+                var PreviousDataCount = Count <= PreviousData.Count ? Count : PreviousData.Count;
+                for (var X = 0; X < PreviousDataCount; ++X)
                 {
-                    DataSource.Save(testMethod, Data);
-                    yield return Data;
-                    ++x;
+                    yield return PreviousData[X];
                 }
-                if (Finished)
-                    break;
+
+                for (var X = PreviousDataCount; X < Count;)
+                {
+                    Data = Manager.Next(Parameters);
+                    if (PreviousItems.AddIfUnique(Same, Data))
+                    {
+                        DataSource?.Save(testMethod, Data);
+                        yield return Data;
+                        ++X;
+                    }
+                    if (Finished)
+                        break;
+                }
+                InternalTimer?.Stop();
             }
-            InternalTimer?.Stop();
         }
 
         /// <summary>
@@ -137,10 +141,7 @@ namespace TestFountain
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="ElapsedEventArgs"/> instance containing the event data.</param>
-        private void InternalTimer_Elapsed(object sender, ElapsedEventArgs e)
-        {
-            Finished = true;
-        }
+        private void InternalTimer_Elapsed(object? sender, ElapsedEventArgs e) => Finished = true;
 
         /// <summary>
         /// Determines if the 2 arrays are the same.
@@ -154,10 +155,10 @@ namespace TestFountain
                 return false;
             if (value1.Length != value2.Length)
                 return false;
-            for (int x = 0; x < value1.Length; ++x)
+            for (var X = 0; X < value1.Length; ++X)
             {
-                var Value1 = JsonConvert.SerializeObject(value1[x]);
-                var Value2 = JsonConvert.SerializeObject(value2[x]);
+                var Value1 = JsonConvert.SerializeObject(value1[X]);
+                var Value2 = JsonConvert.SerializeObject(value2[X]);
                 if (Value1 != Value2)
                     return false;
             }

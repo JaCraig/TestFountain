@@ -41,16 +41,16 @@ namespace TestFountain.DataSources
         }
 
         /// <summary>
-        /// Gets the data directory.
-        /// </summary>
-        /// <value>The data directory.</value>
-        private const string DataDirectory = "./TestFountain/SavedTests/";
-
-        /// <summary>
         /// Gets the serial box.
         /// </summary>
         /// <value>The serial box.</value>
         public SerialBox.SerialBox SerialBox { get; }
+
+        /// <summary>
+        /// Gets the data directory.
+        /// </summary>
+        /// <value>The data directory.</value>
+        private const string _DataDirectory = "./TestFountain/SavedTests/";
 
         /// <summary>
         /// Retrieves the data for the specified method.
@@ -59,20 +59,20 @@ namespace TestFountain.DataSources
         /// <returns>The list of data for the method.</returns>
         public List<object?[]> Read(MethodInfo method)
         {
-            var Parameters = method.GetParameters();
+            ParameterInfo[] Parameters = method.GetParameters();
             if (Parameters.Any(x => x.ParameterType.IsInterface))
                 return new List<object?[]>();
 
             var Results = new List<object?[]>();
-            var DataDirectoryInfo = GetDirectory(DataDirectory, method);
-            foreach (var Directory in DataDirectoryInfo.EnumerateDirectories())
+            DirectoryInfo DataDirectoryInfo = GetDirectory(_DataDirectory, method);
+            foreach (FileCurator.Interfaces.IDirectory Directory in DataDirectoryInfo.EnumerateDirectories())
             {
                 var TempResult = new object?[Parameters.Length];
-                for (int x = 0; x < Parameters.Length; ++x)
+                for (var X = 0; X < Parameters.Length; ++X)
                 {
-                    var File = new FileInfo(Directory.FullName + "/" + x + ".json");
+                    var File = new FileInfo(Directory.FullName + "/" + X + ".json");
                     var FileData = File.Read();
-                    TempResult[x] = SerialBox.Deserialize(FileData, Parameters[x].ParameterType, SerializationType.JSON);
+                    TempResult[X] = SerialBox.Deserialize(FileData, Parameters[X].ParameterType, SerializationType.JSON);
                 }
                 Results.Add(TempResult);
             }
@@ -86,17 +86,47 @@ namespace TestFountain.DataSources
         /// <param name="paramData">The parameter data.</param>
         public void Save(MethodInfo method, object?[] paramData)
         {
-            var Parameters = method.GetParameters();
+            ParameterInfo[] Parameters = method.GetParameters();
             if (Parameters.Any(x => x.ParameterType.IsInterface))
                 return;
 
-            var DataDirectoryInfo = GetDirectory(DataDirectory, method, Guid.NewGuid());
+            DirectoryInfo DataDirectoryInfo = GetDirectory(_DataDirectory, method, Guid.NewGuid());
 
-            for (int x = 0; x < Parameters.Length; ++x)
+            for (var X = 0; X < Parameters.Length; ++X)
             {
-                var File = new FileInfo(DataDirectoryInfo.FullName + "/" + x + ".json");
-                File.Write(SerialBox.Serialize<string>(paramData[x]!, Parameters[x].ParameterType, SerializationType.JSON));
+                var File = new FileInfo(DataDirectoryInfo.FullName + "/" + X + ".json");
+                File.Write(SerialBox.Serialize<string>(paramData[X]!, Parameters[X].ParameterType, SerializationType.JSON) ?? "");
             }
+        }
+
+        /// <summary>
+        /// Gets the directory.
+        /// </summary>
+        /// <param name="dataDirectory">The data directory.</param>
+        /// <param name="method">The method.</param>
+        /// <returns>The directory specified.</returns>
+        private static DirectoryInfo GetDirectory(string dataDirectory, MethodInfo method)
+        {
+            var FullDirectory = RemoveIllegalDirectoryNameCharacters(dataDirectory +
+                (method.DeclaringType?.Namespace ?? "") +
+                "/" +
+                (method.DeclaringType?.GetName().Replace(method.DeclaringType.Namespace + ".", "") ?? "") +
+                "/" +
+                method.Name);
+            return new DirectoryInfo(FullDirectory);
+        }
+
+        /// <summary>
+        /// Gets the directory.
+        /// </summary>
+        /// <param name="dataDirectory">The data directory.</param>
+        /// <param name="method">The method.</param>
+        /// <param name="guid">The unique identifier.</param>
+        /// <returns>The directory specified.</returns>
+        private static DirectoryInfo GetDirectory(string dataDirectory, MethodInfo method, Guid guid)
+        {
+            var FullDirectory = GetDirectory(dataDirectory, method).FullName + "/" + guid;
+            return new DirectoryInfo(FullDirectory);
         }
 
         /// <summary>
@@ -110,43 +140,13 @@ namespace TestFountain.DataSources
             if (string.IsNullOrEmpty(directoryName))
                 return directoryName;
             var InvalidChars = System.IO.Path.GetInvalidPathChars();
-            for (int i = 0, maxLength = InvalidChars.Length; i < maxLength; i++)
+            for (int I = 0, MaxLength = InvalidChars.Length; I < MaxLength; I++)
             {
-                char Char = InvalidChars[i];
+                var Char = InvalidChars[I];
                 directoryName = directoryName.Replace(Char, replacementChar);
             }
 
             return directoryName;
-        }
-
-        /// <summary>
-        /// Gets the directory.
-        /// </summary>
-        /// <param name="dataDirectory">The data directory.</param>
-        /// <param name="method">The method.</param>
-        /// <returns>The directory specified.</returns>
-        private DirectoryInfo GetDirectory(string dataDirectory, MethodInfo method)
-        {
-            var FullDirectory = RemoveIllegalDirectoryNameCharacters(dataDirectory +
-                method.DeclaringType.Namespace +
-                "/" +
-                method.DeclaringType.GetName().Replace(method.DeclaringType.Namespace + ".", "") +
-                "/" +
-                method.Name);
-            return new DirectoryInfo(FullDirectory);
-        }
-
-        /// <summary>
-        /// Gets the directory.
-        /// </summary>
-        /// <param name="dataDirectory">The data directory.</param>
-        /// <param name="method">The method.</param>
-        /// <param name="guid">The unique identifier.</param>
-        /// <returns>The directory specified.</returns>
-        private DirectoryInfo GetDirectory(string dataDirectory, MethodInfo method, Guid guid)
-        {
-            var FullDirectory = GetDirectory(dataDirectory, method).FullName + "/" + guid;
-            return new DirectoryInfo(FullDirectory);
         }
     }
 }

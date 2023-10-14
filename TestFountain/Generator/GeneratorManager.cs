@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 using Mirage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -32,7 +33,7 @@ namespace TestFountain.Generator
         /// </summary>
         /// <param name="generators">The generators.</param>
         /// <param name="random">The random.</param>
-        public GeneratorManager(IEnumerable<IGenerator> generators, Random random)
+        public GeneratorManager(IEnumerable<IGenerator> generators, Mirage.Random random)
         {
             Generators = generators;
             Random = random;
@@ -48,7 +49,7 @@ namespace TestFountain.Generator
         /// Gets the random.
         /// </summary>
         /// <value>The random.</value>
-        public Random Random { get; }
+        public Mirage.Random Random { get; }
 
         /// <summary>
         /// Gets the next set of parameter values.
@@ -58,13 +59,13 @@ namespace TestFountain.Generator
         public object?[] Next(ParameterInfo[] parameters)
         {
             parameters ??= System.Array.Empty<ParameterInfo>();
-            object?[] Data = new object?[parameters.Length];
+            var Data = new object?[parameters.Length];
             IGenerator[] LocalGenerators = Generators.ToArray();
-            for (int i = 0, maxLength = parameters.Length; i < maxLength; i++)
+            for (int I = 0, MaxLength = parameters.Length; I < MaxLength; I++)
             {
-                var Parameter = parameters[i];
-                LocalGenerators = Random.Shuffle(LocalGenerators).ToArray();
-                Data[i] = System.Array
+                ParameterInfo Parameter = parameters[I];
+                LocalGenerators = Random.Shuffle(LocalGenerators)?.ToArray() ?? Array.Empty<IGenerator>();
+                Data[I] = System.Array
                     .Find(LocalGenerators, y => y.CanGenerate(Parameter))?
                     .Next(Parameter);
             }

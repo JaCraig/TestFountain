@@ -16,31 +16,28 @@ namespace TestFountain.Tests
     {
         [Theory]
         [FountainData(100, 1000)]
-        public void Test([Range(1, 100)] int Value1)
-        {
-            Value1.Should().BeInRange(1, 100);
-        }
+        public void Test([Range(1, 100)] int value1) => value1.Should().BeInRange(1, 100);
 
         [Theory]
         [FountainData(1000)]
-        public void Test2(TestClass Value1)
+        public void Test2(TestClass value1)
         {
-            if (Value1 == null)
+            if (value1 == null)
                 return;
-            Value1.Should().BeEquivalentTo(Value1.Copy());
-            Value1.Value1.Should().BeGreaterThan(0);
-            Value1.Value2.Should().NotBeNull();
-            Value1.Value3.Should().BeGreaterThan(0);
+            value1.Should().BeEquivalentTo(value1.Copy());
+            value1.Value1.Should().BeGreaterThan(0);
+            value1.Value2.Should().NotBeNull();
+            value1.Value3.Should().BeGreaterThan(0);
         }
 
         [Theory]
         [FountainData(10, 400)]
-        public void Test3(ITestInterface Value1)
+        public void Test3(ITestInterface value1)
         {
-            if (Value1 == null)
+            if (value1 == null)
                 return;
-            Value1.Method().Returns(1);
-            Value1.Method().Should().Be(1);
+            value1.Method().Returns(1);
+            value1.Method().Should().Be(1);
         }
     }
 

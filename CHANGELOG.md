@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.47"></a>
+## [2.0.47](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.47) (2023-10-26)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([e8a1c1d](https://www.github.com/JaCraig/TestFountain/commit/e8a1c1df5995c1e094badd6ba9a8a5ee2af9a798))
+
+### Other
+
+* Merge pull request #53 from JaCraig/dependabot/nuget/dependencies-0ea7e73b18 ([676784d](https://www.github.com/JaCraig/TestFountain/commit/676784df5fd9910cad36b1c9c990ac930789f2da))
+
 <a name="2.0.46"></a>
 ## [2.0.46](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.46) (2023-10-18)
 

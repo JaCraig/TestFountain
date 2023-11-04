@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.51"></a>
+## [2.0.51](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.51) (2023-11-04)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([b3fa0cc](https://www.github.com/JaCraig/TestFountain/commit/b3fa0ccb0dd2a415c4688cf044e09c99a7e209c4))
+* bump the dependencies group with 1 update ([4129f81](https://www.github.com/JaCraig/TestFountain/commit/4129f81d83a2396f8a7c895a61ba370882cd3266))
+* package updates ([1277031](https://www.github.com/JaCraig/TestFountain/commit/12770313e7b3d50464341b17bb84a61eb50db5db))
+
+### Other
+
+* Merge pull request #58 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-0e5fbc1329 ([e5c353d](https://www.github.com/JaCraig/TestFountain/commit/e5c353d695d9de0f29d7eebf78bc878271abe88f))
+* Merge pull request #59 from JaCraig/dependabot/nuget/dependencies-0444d602f9 ([b520469](https://www.github.com/JaCraig/TestFountain/commit/b5204690b7a0a9d17d1d8407db212b3aef836ded))
+* Merge pull request #60 from JaCraig/dependabot/nuget/dependencies-e44d31145b ([9b6b896](https://www.github.com/JaCraig/TestFountain/commit/9b6b8966daf9c45dbab8d44728703ff05927cb12))
+* bump the dependencies group in /TestFountain.Tests with 1 update ([08863fe](https://www.github.com/JaCraig/TestFountain/commit/08863fe86b4e87afd133bf24ca24244efe2aec97))
+
 <a name="2.0.50"></a>
 ## [2.0.50](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.50) (2023-11-01)
 

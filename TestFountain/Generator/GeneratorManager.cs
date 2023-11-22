@@ -26,30 +26,22 @@ namespace TestFountain.Generator
     /// <summary>
     /// Generator manager
     /// </summary>
-    public class GeneratorManager
+    /// <remarks>Initializes a new instance of the <see cref="GeneratorManager"/> class.</remarks>
+    /// <param name="generators">The generators.</param>
+    /// <param name="random">The random.</param>
+    public class GeneratorManager(IEnumerable<IGenerator> generators, Mirage.Random random)
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GeneratorManager"/> class.
-        /// </summary>
-        /// <param name="generators">The generators.</param>
-        /// <param name="random">The random.</param>
-        public GeneratorManager(IEnumerable<IGenerator> generators, Mirage.Random random)
-        {
-            Generators = generators;
-            Random = random;
-        }
-
         /// <summary>
         /// Gets the generators.
         /// </summary>
         /// <value>The generators.</value>
-        public IEnumerable<IGenerator> Generators { get; }
+        public IEnumerable<IGenerator> Generators { get; } = generators;
 
         /// <summary>
         /// Gets the random.
         /// </summary>
         /// <value>The random.</value>
-        public Mirage.Random Random { get; }
+        public Mirage.Random Random { get; } = random;
 
         /// <summary>
         /// Gets the next set of parameter values.
@@ -58,13 +50,13 @@ namespace TestFountain.Generator
         /// <returns>The values.</returns>
         public object?[] Next(ParameterInfo[] parameters)
         {
-            parameters ??= System.Array.Empty<ParameterInfo>();
+            parameters ??= [];
             var Data = new object?[parameters.Length];
             IGenerator[] LocalGenerators = Generators.ToArray();
             for (int I = 0, MaxLength = parameters.Length; I < MaxLength; I++)
             {
                 ParameterInfo Parameter = parameters[I];
-                LocalGenerators = Random.Shuffle(LocalGenerators)?.ToArray() ?? Array.Empty<IGenerator>();
+                LocalGenerators = Random.Shuffle(LocalGenerators)?.ToArray() ?? [];
                 Data[I] = System.Array
                     .Find(LocalGenerators, y => y.CanGenerate(Parameter))?
                     .Next(Parameter);

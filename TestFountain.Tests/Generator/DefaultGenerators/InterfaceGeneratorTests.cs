@@ -31,7 +31,7 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
         public void Next()
         {
             var TestObject = new InterfaceGenerator();
-            ITestInterface Result = (ITestInterface)TestObject.Next(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]);
+            var Result = (ITestInterface)TestObject.Next(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]);
             Result.Value.Should().NotBeNull();
             Result.Method().Returns(1);
             Result.Method().Should().Be(1);

@@ -20,7 +20,7 @@ namespace TestFountain.Tests
         public void GetData()
         {
             var TestObject = new FountainDataAttribute(1);
-            var Data = TestObject.GetData(typeof(TestClass).GetMethod("TestMethod"));
+            System.Collections.Generic.IEnumerable<object[]> Data = TestObject.GetData(typeof(TestClass).GetMethod("TestMethod"));
             Data.Should().NotBeNullOrEmpty();
             Data.Should().ContainSingle();
             Data.First().Should().NotBeNullOrEmpty();

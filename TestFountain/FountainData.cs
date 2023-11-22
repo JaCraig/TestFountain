@@ -53,7 +53,7 @@ namespace TestFountain
             Count = count;
             MaxDuration = maxDuration;
             Finished = false;
-            PreviousItems = new List<object?[]>();
+            PreviousItems = [];
         }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace TestFountain
         /// Gets or sets the previous items.
         /// </summary>
         /// <value>The previous items.</value>
-        private List<object?[]> PreviousItems { get; } = new List<object?[]>();
+        private List<object?[]> PreviousItems { get; } = [];
 
         /// <summary>
         /// Returns the data to be used to test the theory.
@@ -113,7 +113,7 @@ namespace TestFountain
                 InternalTimer.Elapsed += InternalTimer_Elapsed;
                 InternalTimer?.Start();
 
-                List<object?[]> PreviousData = DataSource?.Read(testMethod) ?? new List<object?[]>();
+                List<object?[]> PreviousData = DataSource?.Read(testMethod) ?? [];
                 var PreviousDataCount = Count <= PreviousData.Count ? Count : PreviousData.Count;
                 for (var X = 0; X < PreviousDataCount; ++X)
                 {

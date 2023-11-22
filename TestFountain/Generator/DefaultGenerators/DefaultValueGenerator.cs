@@ -35,19 +35,13 @@ namespace TestFountain.Generator.DefaultGenerators
         /// <returns>
         /// <c>true</c> if this instance can generate the specified parameter; otherwise, <c>false</c>.
         /// </returns>
-        public bool CanGenerate(ParameterInfo parameter)
-        {
-            return !parameter.HasDefaultValue && parameter.GetCustomAttribute<ValidationAttribute>() == null;
-        }
+        public bool CanGenerate(ParameterInfo parameter) => !parameter.HasDefaultValue && parameter.GetCustomAttribute<ValidationAttribute>() == null;
 
         /// <summary>
         /// Generates the next object of the specified parameter type.
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         /// <returns>The next object.</returns>
-        public object? Next(ParameterInfo parameter)
-        {
-            return ((object?)null).To(parameter.ParameterType, null);
-        }
+        public object? Next(ParameterInfo parameter) => ((object?)null).To(parameter.ParameterType, null);
     }
 }

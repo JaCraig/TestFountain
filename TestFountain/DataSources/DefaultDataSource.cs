@@ -29,22 +29,15 @@ namespace TestFountain.DataSources
     /// Default data source.
     /// </summary>
     /// <seealso cref="IDatasource"/>
-    public class DefaultDataSource : IDatasource
+    /// <remarks>Initializes a new instance of the <see cref="DefaultDataSource"/> class.</remarks>
+    /// <param name="serialBox">The serial box.</param>
+    public class DefaultDataSource(SerialBox.SerialBox serialBox) : IDatasource
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DefaultDataSource"/> class.
-        /// </summary>
-        /// <param name="serialBox">The serial box.</param>
-        public DefaultDataSource(SerialBox.SerialBox serialBox)
-        {
-            SerialBox = serialBox;
-        }
-
         /// <summary>
         /// Gets the serial box.
         /// </summary>
         /// <value>The serial box.</value>
-        public SerialBox.SerialBox SerialBox { get; }
+        public SerialBox.SerialBox SerialBox { get; } = serialBox;
 
         /// <summary>
         /// Gets the data directory.
@@ -61,7 +54,7 @@ namespace TestFountain.DataSources
         {
             ParameterInfo[] Parameters = method.GetParameters();
             if (Parameters.Any(x => x.ParameterType.IsInterface))
-                return new List<object?[]>();
+                return [];
 
             var Results = new List<object?[]>();
             DirectoryInfo DataDirectoryInfo = GetDirectory(_DataDirectory, method);

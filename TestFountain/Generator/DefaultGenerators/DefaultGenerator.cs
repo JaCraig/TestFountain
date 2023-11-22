@@ -24,22 +24,18 @@ namespace TestFountain.Generator.DefaultGenerators
     /// Default generator
     /// </summary>
     /// <seealso cref="IGenerator"/>
-    public class DefaultGenerator : IGenerator
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="DefaultGenerator"/> class.
+    /// </remarks>
+    /// <param name="random">The random.</param>
+    public class DefaultGenerator(Mirage.Random random) : IGenerator
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DefaultGenerator"/> class.
-        /// </summary>
-        /// <param name="random">The random.</param>
-        public DefaultGenerator(Mirage.Random random)
-        {
-            RandomObj = random;
-        }
 
         /// <summary>
         /// Gets the random object.
         /// </summary>
         /// <value>The random object.</value>
-        private Mirage.Random RandomObj { get; }
+        private Mirage.Random RandomObj { get; } = random;
 
         /// <summary>
         /// Determines whether this instance can generate the specified parameter.
@@ -48,10 +44,7 @@ namespace TestFountain.Generator.DefaultGenerators
         /// <returns>
         /// <c>true</c> if this instance can generate the specified parameter; otherwise, <c>false</c>.
         /// </returns>
-        public bool CanGenerate(ParameterInfo parameter)
-        {
-            return !parameter.HasDefaultValue && !parameter.ParameterType.IsInterface;
-        }
+        public bool CanGenerate(ParameterInfo parameter) => !parameter.HasDefaultValue && !parameter.ParameterType.IsInterface;
 
         /// <summary>
         /// Generates the next object of the specified parameter type.
@@ -61,7 +54,7 @@ namespace TestFountain.Generator.DefaultGenerators
         public object? Next(ParameterInfo parameter)
         {
             var ReturnValue = RandomObj.Next(parameter.ParameterType);
-            var Validation = parameter.GetCustomAttribute<ValidationAttribute>();
+            ValidationAttribute? Validation = parameter.GetCustomAttribute<ValidationAttribute>();
             if (Validation != null)
             {
                 while (!Validation.IsValid(ReturnValue))

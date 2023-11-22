@@ -76,10 +76,7 @@ namespace TestFountain.Generator.DefaultGenerators
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         /// <returns>The next object.</returns>
-        public object Next(ParameterInfo parameter)
-        {
-            return Random.Next<bool>() ? (Max?[parameter.ParameterType] ?? false) : (Min?[parameter.ParameterType] ?? false);
-        }
+        public object Next(ParameterInfo parameter) => Random.Next<bool>() ? (Max?[parameter.ParameterType] ?? false) : (Min?[parameter.ParameterType] ?? false);
 
         /// <summary>
         /// Setups the maximum values.

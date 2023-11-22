@@ -24,7 +24,7 @@ namespace TestFountain.Tests.DataSources
             TestObject.Save(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"), new object[] { "A" });
             TestObject.Save(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"), new object[] { "B" });
             TestObject.Save(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"), new object[] { "C" });
-            var Results = TestObject.Read(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"));
+            System.Collections.Generic.List<object[]> Results = TestObject.Read(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"));
             //var Expected = new List<object[]>
             //{
             //    new object[] { "A" },

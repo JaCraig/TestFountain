@@ -114,8 +114,8 @@ namespace TestFountain.Example
         [FountainData(10)]
         public void Method1([Range(0, 1000)] int a, [Range(0, 1000)] int b)
         {
-            Assert.True(0 &lt;= a &amp;&amp; a &lt;= 1000);
-            Assert.True(0 &lt;= b &amp;&amp; b &lt;= 1000);
+            Assert.True(a is &gt;= 0 and &lt;= 1000);
+            Assert.True(b is &gt;= 0 and &lt;= 1000);
         }
     }
 }

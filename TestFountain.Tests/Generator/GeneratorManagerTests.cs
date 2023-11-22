@@ -13,8 +13,8 @@ namespace TestFountain.Tests.Generator
         public void Creation()
         {
             var TestObject = new GeneratorManager(new IGenerator[0], new Mirage.Random());
-            TestObject.Generators.Should().BeEmpty();
-            TestObject.Random.Should().NotBeNull();
+            _ = TestObject.Generators.Should().BeEmpty();
+            _ = TestObject.Random.Should().NotBeNull();
         }
 
         [Fact]
@@ -22,9 +22,9 @@ namespace TestFountain.Tests.Generator
         {
             var TestObject = new GeneratorManager(new IGenerator[] { new DefaultGenerator(new Mirage.Random()) }, new Mirage.Random());
             var Results = TestObject.Next(typeof(TestClass).GetMethod("TestMethod").GetParameters());
-            Results.Should().NotBeNull();
-            Results.Should().HaveCount(1);
-            Results[0].Should().NotBeNull();
+            _ = Results.Should().NotBeNull();
+            _ = Results.Should().HaveCount(1);
+            _ = Results[0].Should().NotBeNull();
         }
 
         private class TestClass

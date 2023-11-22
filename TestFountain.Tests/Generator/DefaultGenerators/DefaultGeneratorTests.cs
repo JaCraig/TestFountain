@@ -13,14 +13,14 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
         {
             var TestObject = new DefaultGenerator(Services.GetService<Mirage.Random>());
 
-            TestObject.CanGenerate(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]).Should().BeTrue();
+            _ = TestObject.CanGenerate(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]).Should().BeTrue();
         }
 
         [Fact]
         public void Creation()
         {
             var TestObject = new DefaultGenerator(Services.GetService<Mirage.Random>());
-            TestObject.Should().NotBeNull();
+            _ = TestObject.Should().NotBeNull();
         }
 
         [Fact]
@@ -28,8 +28,8 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
         {
             var TestObject = new DefaultGenerator(Services.GetService<Mirage.Random>());
             var Result = TestObject.Next(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]);
-            Result.Should().BeOfType<string>();
-            Result.Should().NotBeNull();
+            _ = Result.Should().BeOfType<string>();
+            _ = Result.Should().NotBeNull();
         }
 
         private class TestClass

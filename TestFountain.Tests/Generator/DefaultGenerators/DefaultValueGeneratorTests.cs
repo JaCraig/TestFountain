@@ -12,14 +12,14 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
         {
             var TestObject = new DefaultValueGenerator();
 
-            TestObject.CanGenerate(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]).Should().BeTrue();
+            _ = TestObject.CanGenerate(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]).Should().BeTrue();
         }
 
         [Fact]
         public void Creation()
         {
             var TestObject = new DefaultValueGenerator();
-            TestObject.Should().NotBeNull();
+            _ = TestObject.Should().NotBeNull();
         }
 
         [Fact]
@@ -27,7 +27,7 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
         {
             var TestObject = new DefaultValueGenerator();
             var Result = TestObject.Next(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]);
-            Result.Should().BeNull();
+            _ = Result.Should().BeNull();
         }
 
         private class TestClass

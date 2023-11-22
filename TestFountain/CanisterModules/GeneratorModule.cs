@@ -39,10 +39,10 @@ namespace TestFountain.CanisterModules
         /// <param name="serviceDescriptors">The service descriptors.</param>
         public void Load(IServiceCollection serviceDescriptors)
         {
-            serviceDescriptors
+            _ = (serviceDescriptors
                 ?.AddAllTransient<IGenerator>()
                 ?.AddAllTransient<IDatasource>()
-                ?.AddTransient<GeneratorManager>();
+                ?.AddTransient<GeneratorManager>());
         }
     }
 }

@@ -24,10 +24,10 @@ namespace TestFountain.Tests
         {
             if (value1 == null)
                 return;
-            value1.Should().BeEquivalentTo(value1.Copy());
-            value1.Value1.Should().BeGreaterThan(0);
-            value1.Value2.Should().NotBeNull();
-            value1.Value3.Should().BeGreaterThan(0);
+            _ = value1.Should().BeEquivalentTo(value1.Copy());
+            _ = value1.Value1.Should().BeGreaterThan(0);
+            _ = value1.Value2.Should().NotBeNull();
+            _ = value1.Value3.Should().BeGreaterThan(0);
         }
 
         [Theory]
@@ -36,8 +36,8 @@ namespace TestFountain.Tests
         {
             if (value1 == null)
                 return;
-            value1.Method().Returns(1);
-            value1.Method().Should().Be(1);
+            _ = value1.Method().Returns(1);
+            _ = value1.Method().Should().Be(1);
         }
     }
 

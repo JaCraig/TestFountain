@@ -88,7 +88,7 @@ namespace TestFountain.DataSources
             for (var X = 0; X < Parameters.Length; ++X)
             {
                 var File = new FileInfo(DataDirectoryInfo.FullName + "/" + X + ".json");
-                File.Write(SerialBox.Serialize<string>(paramData[X]!, Parameters[X].ParameterType, SerializationType.JSON) ?? "");
+                _ = File.Write(SerialBox.Serialize<string>(paramData[X]!, Parameters[X].ParameterType, SerializationType.JSON) ?? "");
             }
         }
 

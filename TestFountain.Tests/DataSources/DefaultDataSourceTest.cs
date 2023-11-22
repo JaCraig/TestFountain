@@ -13,8 +13,8 @@ namespace TestFountain.Tests.DataSources
         public void Creation()
         {
             var TestObject = new DefaultDataSource(Services.GetService<SerialBox.SerialBox>());
-            TestObject.Should().NotBeNull();
-            TestObject.SerialBox.Should().NotBeNull();
+            _ = TestObject.Should().NotBeNull();
+            _ = TestObject.SerialBox.Should().NotBeNull();
         }
 
         [Fact]
@@ -24,7 +24,8 @@ namespace TestFountain.Tests.DataSources
             TestObject.Save(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"), new object[] { "A" });
             TestObject.Save(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"), new object[] { "B" });
             TestObject.Save(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"), new object[] { "C" });
-            System.Collections.Generic.List<object[]> Results = TestObject.Read(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"));
+
+            _ = TestObject.Read(typeof(DefaultDataSourceTestClassRead).GetMethod("TestMethod"));
             //var Expected = new List<object[]>
             //{
             //    new object[] { "A" },
@@ -39,7 +40,8 @@ namespace TestFountain.Tests.DataSources
         {
             var TestObject = new DefaultDataSource(Services.GetService<SerialBox.SerialBox>());
             TestObject.Save(typeof(DefaultDataSourceTestClassSave).GetMethod("TestMethod"), new object[] { "A" });
-            var TestDataDirectory = new DirectoryInfo("./TestFountain/SavedTests/TestFountain.Tests.DataSources/DefaultDataSourceTest.DefaultDataSourceTestClassSave/TestMethod/");
+
+            _ = new DirectoryInfo("./TestFountain/SavedTests/TestFountain.Tests.DataSources/DefaultDataSourceTest.DefaultDataSourceTestClassSave/TestMethod/");
             //TestDataDirectory.EnumerateDirectories().Should().ContainSingle();
             //TestDataDirectory.EnumerateFiles(options: System.IO.SearchOption.AllDirectories).Should().ContainSingle();
             //TestDataDirectory.EnumerateFiles(options: System.IO.SearchOption.AllDirectories).FirstOrDefault()?.Read().Should().Be("\"A\"");

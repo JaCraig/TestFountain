@@ -17,14 +17,14 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
         {
             var TestObject = new InterfaceGenerator();
 
-            TestObject.CanGenerate(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]).Should().BeTrue();
+            _ = TestObject.CanGenerate(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]).Should().BeTrue();
         }
 
         [Fact]
         public void Creation()
         {
             var TestObject = new InterfaceGenerator();
-            TestObject.Should().NotBeNull();
+            _ = TestObject.Should().NotBeNull();
         }
 
         [Fact]
@@ -32,9 +32,9 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
         {
             var TestObject = new InterfaceGenerator();
             var Result = (ITestInterface)TestObject.Next(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]);
-            Result.Value.Should().NotBeNull();
-            Result.Method().Returns(1);
-            Result.Method().Should().Be(1);
+            _ = Result.Value.Should().NotBeNull();
+            _ = Result.Method().Returns(1);
+            _ = Result.Method().Should().Be(1);
         }
 
         public interface ITestInterface

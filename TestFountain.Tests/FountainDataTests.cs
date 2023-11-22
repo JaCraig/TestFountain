@@ -11,9 +11,9 @@ namespace TestFountain.Tests
         public void Creation()
         {
             var TestObject = new FountainDataAttribute(1);
-            TestObject.Should().NotBeNull();
-            TestObject.Count.Should().Be(1);
-            TestObject.MaxDuration.Should().Be(int.MaxValue);
+            _ = TestObject.Should().NotBeNull();
+            _ = TestObject.Count.Should().Be(1);
+            _ = TestObject.MaxDuration.Should().Be(int.MaxValue);
         }
 
         [Fact]
@@ -21,9 +21,9 @@ namespace TestFountain.Tests
         {
             var TestObject = new FountainDataAttribute(1);
             System.Collections.Generic.IEnumerable<object[]> Data = TestObject.GetData(typeof(TestClass).GetMethod("TestMethod"));
-            Data.Should().NotBeNullOrEmpty();
-            Data.Should().ContainSingle();
-            Data.First().Should().NotBeNullOrEmpty();
+            _ = Data.Should().NotBeNullOrEmpty();
+            _ = Data.Should().ContainSingle();
+            _ = Data.First().Should().NotBeNullOrEmpty();
         }
 
         private class TestClass

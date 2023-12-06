@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using System;
 using TestFountain.Generator;
 using TestFountain.Generator.DefaultGenerators;
 using TestFountain.Generator.Interfaces;
@@ -12,7 +13,7 @@ namespace TestFountain.Tests.Generator
         [Fact]
         public void Creation()
         {
-            var TestObject = new GeneratorManager(new IGenerator[0], new Mirage.Random());
+            var TestObject = new GeneratorManager(Array.Empty<IGenerator>(), new Mirage.Random());
             _ = TestObject.Generators.Should().BeEmpty();
             _ = TestObject.Random.Should().NotBeNull();
         }

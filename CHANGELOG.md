@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.70"></a>
+## [2.0.70](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.70) (2024-01-07)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([cb1b1d0](https://www.github.com/JaCraig/TestFountain/commit/cb1b1d0956374f8b1306322dd2347b495ab0a5f9))
+* Fixing build ([33ab406](https://www.github.com/JaCraig/TestFountain/commit/33ab406d7b0639fcb13beb9f3c3b258f88c1ef4b))
+
+### Other
+
+* Merge pull request #88 from JaCraig/dependabot/nuget/dependencies-b0623eb3d4 ([cca698c](https://www.github.com/JaCraig/TestFountain/commit/cca698c7512d91cfeda5b3a7778baf06b1673be4))
+* Merge pull request #89 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-970de2ab38 ([f72ed6a](https://www.github.com/JaCraig/TestFountain/commit/f72ed6a463de83778546f384fbcceed91d6b84df))
+* bump the dependencies group in /TestFountain.Tests with 1 update ([e339621](https://www.github.com/JaCraig/TestFountain/commit/e339621bba9494a12cf3b2e2fe77159a6e5200f6))
+* Update docsfx.yml ([e3b277d](https://www.github.com/JaCraig/TestFountain/commit/e3b277d48fb07a839f8aeebc08235fcbae0b4196))
+* Update dotnet-publish.yml ([7edf29e](https://www.github.com/JaCraig/TestFountain/commit/7edf29ec6b6e750efc02809e0146667531084c34))
+* Update dotnet-test.yml ([8ead806](https://www.github.com/JaCraig/TestFountain/commit/8ead806d6256388f04546e894ebf7f4e874b9c92))
+
 <a name="2.0.69"></a>
 ## [2.0.69](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.69) (2023-12-27)
 

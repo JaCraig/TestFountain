@@ -19,8 +19,6 @@ updates:
       - dependency-name: "coverlet.collector"
       - dependency-name: "Mecha.xUnit"
       - dependency-name: "Microsoft.NET.Test.Sdk"
-      - dependency-name: "xunit"
-      - dependency-name: "xunit.runner.visualstudio"
       - dependency-name: "Microsoft.CodeAnalysis.NetAnalyzers"
       - dependency-name: "husky"
       - dependency-name: "BenchmarkDotNet"

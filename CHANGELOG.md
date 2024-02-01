@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.84"></a>
+## [2.0.84](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.84) (2024-02-01)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([858280f](https://www.github.com/JaCraig/TestFountain/commit/858280f7db150956b8c316bb7dd1a71adda265c3))
+
+### Other
+
+* Merge pull request #105 from JaCraig/dependabot/nuget/dependencies-82445c4dfb ([ac64bf6](https://www.github.com/JaCraig/TestFountain/commit/ac64bf6976dee63b53bc68937fd4540df3ba00f0))
+* Update dependabot-reviewer.yml ([d1c9ccb](https://www.github.com/JaCraig/TestFountain/commit/d1c9ccb67c7154b5c9e02a08fc3eac559df196dc))
+
 <a name="2.0.83"></a>
 ## [2.0.83](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.83) (2024-02-01)
 

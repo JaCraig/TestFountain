@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.120"></a>
+## [2.0.120](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.120) (2024-04-10)
+
+### Bug Fixes
+
+* bump FileCurator from 4.0.73 to 4.0.74 in the dependencies group ([c7fdc6f](https://www.github.com/JaCraig/TestFountain/commit/c7fdc6f8bd1bb595f1ad3b5ec686110d4446d444))
+
+### Other
+
+* Merge pull request #144 from JaCraig/dependabot/github_actions/dependencies-45223d3826 ([5ec7c34](https://www.github.com/JaCraig/TestFountain/commit/5ec7c3411b28f2f7294c970b2de0bdfeb16e85a6))
+* Merge pull request #145 from JaCraig/dependabot/nuget/dependencies-80771566af ([6856eb7](https://www.github.com/JaCraig/TestFountain/commit/6856eb7cfa00ea8e90a38f16778b31e46d82c36e))
+* bump peaceiris/actions-gh-pages in the dependencies group ([299f374](https://www.github.com/JaCraig/TestFountain/commit/299f3747cb77f40f62d689d154a77f993e5b577b))
+
 <a name="2.0.119"></a>
 ## [2.0.119](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.119) (2024-04-02)
 

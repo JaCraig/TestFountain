@@ -51,12 +51,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FileCurator" Version="4.0.77" />
+    <PackageReference Include="FileCurator" Version="4.0.78" />
     <PackageReference Include="FluentAssertions" Version="6.12.0" />
-    <PackageReference Include="Mirage" Version="4.0.95" />
+    <PackageReference Include="Mirage" Version="4.0.96" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NSubstitute" Version="5.1.0" />
-    <PackageReference Include="SerialBox" Version="4.0.30" />
+    <PackageReference Include="SerialBox" Version="4.0.31" />
     <PackageReference Include="xunit.extensibility.core" Version="2.8.0" />
 	  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
 	  <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="8.0.0">

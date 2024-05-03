@@ -1,5 +1,7 @@
 # TestFountain
 
+[![.NET Publish](https://github.com/JaCraig/TestFountain/actions/workflows/dotnet-publish.yml/badge.svg)](https://github.com/JaCraig/TestFountain/actions/workflows/dotnet-publish.yml) [![Coverage Status](https://coveralls.io/repos/github/JaCraig/TestFountain/badge.svg?branch=master)](https://coveralls.io/github/JaCraig/TestFountain?branch=master)
+
 TestFountain is a C# library that provides an attribute for [xUnit.Net](https://xunit.net/) to generate random test data. It aims to simplify the process of generating diverse and comprehensive test cases by automatically creating random input values for your xUnit.Net tests.
 
 ## Features

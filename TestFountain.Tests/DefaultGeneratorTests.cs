@@ -1,5 +1,6 @@
 ﻿using FluentAssertions;
 using Mirage.Generators;
+using Mirage.Generators.Names;
 using NSubstitute;
 using System.ComponentModel.DataAnnotations;
 using TestFountain.Tests.BaseClasses;

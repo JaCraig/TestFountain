@@ -17,10 +17,10 @@ updates:
           - "*"
     ignore:
       - dependency-name: "coverlet.collector"
+      - dependency-name: "coverlet.msbuild"
       - dependency-name: "Mecha.xUnit"
       - dependency-name: "Microsoft.NET.Test.Sdk"
       - dependency-name: "Microsoft.CodeAnalysis.NetAnalyzers"
-      - dependency-name: "husky"
       - dependency-name: "BenchmarkDotNet"
 
   - package-ecosystem: "nuget" # See documentation for possible values
@@ -35,6 +35,25 @@ updates:
           - "*"
     allow:
       - dependency-name: "coverlet.collector"
+      - dependency-name: "coverlet.msbuild"
+      - dependency-name: "Mecha.xUnit"
+      - dependency-name: "Microsoft.NET.Test.Sdk"
+      - dependency-name: "xunit"
+      - dependency-name: "xunit.runner.visualstudio"
+
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/TestFountain.Example/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
+    allow:
+      - dependency-name: "coverlet.collector"
+      - dependency-name: "coverlet.msbuild"
       - dependency-name: "Mecha.xUnit"
       - dependency-name: "Microsoft.NET.Test.Sdk"
       - dependency-name: "xunit"

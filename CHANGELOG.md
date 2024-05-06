@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.128"></a>
+## [2.0.128](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.128) (2024-05-06)
+
+### Bug Fixes
+
+* bump the dependencies group with 3 updates ([5c897db](https://www.github.com/JaCraig/TestFountain/commit/5c897dbf3181cfdcf712569efb2fbe75e223ac10))
+
+### Other
+
+* Merge pull request #156 from JaCraig/dependabot/nuget/dependencies-72d9567bcb ([ce32c16](https://www.github.com/JaCraig/TestFountain/commit/ce32c16283b05ac23dd2bc63bb2256d5bed2f3ed))
+* Updating husky ([f9d6122](https://www.github.com/JaCraig/TestFountain/commit/f9d6122fe3f51e56f2054417951f8617387b2120))
+
 <a name="2.0.127"></a>
 ## [2.0.127](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.127) (2024-05-03)
 

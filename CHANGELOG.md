@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.134"></a>
+## [2.0.134](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.134) (2024-05-27)
+
+### Bug Fixes
+
+* bump xunit.extensibility.core in the dependencies group ([9aafc99](https://www.github.com/JaCraig/TestFountain/commit/9aafc99d66c184fef22047cece77719b8af6269d))
+
+### Other
+
+* --- ([6669caf](https://www.github.com/JaCraig/TestFountain/commit/6669cafa1f17a63563aee0b7aa14f1ee0f8cce7f))
+* Merge pull request #162 from JaCraig/dependabot/nuget/dependencies-79776c15e3 ([c64d4e1](https://www.github.com/JaCraig/TestFountain/commit/c64d4e11b31f5a1b98e5d146ce1aa93218116938))
+* Merge pull request #163 from JaCraig/dependabot/nuget/TestFountain.Example/dependencies-d10d8338a5 ([ff92979](https://www.github.com/JaCraig/TestFountain/commit/ff92979349ebdef35423a6a6ad8d23f2495ca380))
+* Merge pull request #164 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-d10d8338a5 ([76b6313](https://www.github.com/JaCraig/TestFountain/commit/76b63134b33ae80fcc652d0d460285f673756bf9))
+* Merge pull request #165 from JaCraig/dependabot/nuget/TestFountain.Example/dependencies-63bf006411 ([0c655c1](https://www.github.com/JaCraig/TestFountain/commit/0c655c1140c09b5f7c5aec4a9d2c5bc995dce097))
+* Merge pull request #166 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-63bf006411 ([e510985](https://www.github.com/JaCraig/TestFountain/commit/e510985bb9642becd028e9003ac01dfdc736cdf8))
+* Merge pull request #167 from JaCraig/dependabot/nuget/dependencies-b78654b725 ([a71b427](https://www.github.com/JaCraig/TestFountain/commit/a71b4275b8785e8c5ec36590d32bbacacd396afa))
+* bump Microsoft.NET.Test.Sdk ([e4f7006](https://www.github.com/JaCraig/TestFountain/commit/e4f7006cf7d4f5cc08eb32ed85628af02325b202))
+* bump Microsoft.NET.Test.Sdk ([17e4eb4](https://www.github.com/JaCraig/TestFountain/commit/17e4eb4744673037a83b8245d346906aac851882))
+* bump the dependencies group ([1cabdea](https://www.github.com/JaCraig/TestFountain/commit/1cabdeafc84759c4858b7b1b439c9cfb9857f72a))
+* bump the dependencies group in /TestFountain.Tests with 2 updates ([6cad5c3](https://www.github.com/JaCraig/TestFountain/commit/6cad5c3e638f886564740fff4ee18092d3fbc0be))
+
 <a name="2.0.133"></a>
 ## [2.0.133](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.133) (2024-05-16)
 

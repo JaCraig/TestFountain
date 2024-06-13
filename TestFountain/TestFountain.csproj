@@ -51,9 +51,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FileCurator" Version="4.0.88" />
+    <PackageReference Include="FileCurator" Version="4.0.89" />
     <PackageReference Include="FluentAssertions" Version="6.12.0" />
-    <PackageReference Include="Mirage" Version="4.0.105" />
+    <PackageReference Include="Mirage" Version="4.0.106" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NSubstitute" Version="5.1.0" />
     <PackageReference Include="SerialBox" Version="4.0.33" />

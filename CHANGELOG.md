@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.147"></a>
+## [2.0.147](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.147) (2024-06-27)
+
+### Bug Fixes
+
+* bump Mirage from 4.1.2 to 4.1.3 in the dependencies group ([eb75a46](https://www.github.com/JaCraig/TestFountain/commit/eb75a4665ab78185fafcf865f16203642d450fd2))
+
+### Other
+
+* Merge pull request #180 from JaCraig/dependabot/nuget/dependencies-28e53575b8 ([683e6d7](https://www.github.com/JaCraig/TestFountain/commit/683e6d72806b19d7cd637264438e3578f59ae279))
+
 <a name="2.0.146"></a>
 ## [2.0.146](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.146) (2024-06-26)
 

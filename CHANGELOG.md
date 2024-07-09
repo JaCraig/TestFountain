@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.149"></a>
+## [2.0.149](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.149) (2024-07-09)
+
+### Bug Fixes
+
+* bump xunit.extensibility.core in the dependencies group ([d57ccfe](https://www.github.com/JaCraig/TestFountain/commit/d57ccfe8817e142351da5de619a1aa333045504f))
+
+### Other
+
+* Merge pull request #182 from JaCraig/dependabot/github_actions/dependencies-c44bf69c3e ([cfd6972](https://www.github.com/JaCraig/TestFountain/commit/cfd69729705c32b2a3e6a475456a1fab270a16a2))
+* Merge pull request #183 from JaCraig/dependabot/nuget/TestFountain.Example/dependencies-8e312df114 ([1dbfbf8](https://www.github.com/JaCraig/TestFountain/commit/1dbfbf88bdcc61f9b369da65ca732a5c145a5530))
+* Merge pull request #184 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-8e312df114 ([644421f](https://www.github.com/JaCraig/TestFountain/commit/644421f0ff4c8e73536bb168b2cf75a99c82f5dd))
+* Merge pull request #185 from JaCraig/dependabot/nuget/dependencies-8c5462b24e ([af08635](https://www.github.com/JaCraig/TestFountain/commit/af0863555b0a7aca2e045e2fa9273374a3ef10c3))
+* bump dependabot/fetch-metadata in the dependencies group ([796ddd5](https://www.github.com/JaCraig/TestFountain/commit/796ddd5141bc6a2383979e5197784c2b2f6a5728))
+* bump the dependencies group ([28ba3da](https://www.github.com/JaCraig/TestFountain/commit/28ba3daf68e688d2a5494ecf6a5089e78440ae7d))
+* bump the dependencies group in /TestFountain.Tests with 2 updates ([24ceebe](https://www.github.com/JaCraig/TestFountain/commit/24ceebecb208501ec9fbba9dfb3b0fa5684604a1))
+
 <a name="2.0.148"></a>
 ## [2.0.148](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.148) (2024-07-02)
 

@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.165"></a>
+## [2.0.165](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.165) (2024-09-09)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([14d925d](https://www.github.com/JaCraig/TestFountain/commit/14d925d6499058a08b28391880de79d010501175))
+
+### Other
+
+* Merge pull request #204 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-78c52a00e0 ([56a2f0a](https://www.github.com/JaCraig/TestFountain/commit/56a2f0ad37ee288330411eca6a14870947da4197))
+* Merge pull request #205 from JaCraig/dependabot/nuget/TestFountain.Example/dependencies-78c52a00e0 ([ba9393d](https://www.github.com/JaCraig/TestFountain/commit/ba9393d82d65c6b26a3ad4ed97d63f6f77813dc0))
+* Merge pull request #206 from JaCraig/dependabot/nuget/dependencies-4d89138cd2 ([3013c60](https://www.github.com/JaCraig/TestFountain/commit/3013c6075dfc1e6415983908872a122f1890746f))
+* bump Microsoft.NET.Test.Sdk ([659ff13](https://www.github.com/JaCraig/TestFountain/commit/659ff13f88e32882ac32737f4bddba9328a28056))
+* bump Microsoft.NET.Test.Sdk ([20139f5](https://www.github.com/JaCraig/TestFountain/commit/20139f52693c1e23877fb1f4bc7041ae77c48c79))
+
 <a name="2.0.164"></a>
 ## [2.0.164](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.164) (2024-09-02)
 

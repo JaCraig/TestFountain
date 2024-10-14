@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.175"></a>
+## [2.0.175](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.175) (2024-10-14)
+
+### Bug Fixes
+
+* bump SerialBox from 4.0.38 to 4.0.39 in the dependencies group ([ef3fe55](https://www.github.com/JaCraig/TestFountain/commit/ef3fe551cfe70ccd262b006581a5b3b1e3cd5ae4))
+
+### Other
+
+* Merge pull request #217 from JaCraig/dependabot/nuget/dependencies-0718ab8339 ([e10952d](https://www.github.com/JaCraig/TestFountain/commit/e10952d74fa0b8c6f30814e03a664616f9000a8b))
+
 <a name="2.0.174"></a>
 ## [2.0.174](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.174) (2024-10-10)
 

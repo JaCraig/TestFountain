@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.176"></a>
+## [2.0.176](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.176) (2024-10-29)
+
+### Bug Fixes
+
+* bump NSubstitute from 5.1.0 to 5.3.0 in the dependencies group ([480cb27](https://www.github.com/JaCraig/TestFountain/commit/480cb27890dc85a4ef9caca9d2aa68ec22469c4a))
+* bump versionize from 1.27.0 to 2.0.0 in the dependencies group ([629c65e](https://www.github.com/JaCraig/TestFountain/commit/629c65e9d3a4679236abd212fd3c9c360005c6e6))
+* bump versionize from 2.0.0 to 2.1.0 in the dependencies group ([8d7630e](https://www.github.com/JaCraig/TestFountain/commit/8d7630efd27b5767f66bfa7c04e8fed4b618f60b))
+
+### Other
+
+* Merge pull request #218 from JaCraig/dependabot/nuget/dependencies-9c36df7c76 ([10cb8aa](https://www.github.com/JaCraig/TestFountain/commit/10cb8aa354de2c14044daa2288382be8b303fb16))
+* Merge pull request #219 from JaCraig/dependabot/nuget/dependencies-3894128c1d ([ab464aa](https://www.github.com/JaCraig/TestFountain/commit/ab464aa9cac65168c87924eea8a06218f80c7e9f))
+* Merge pull request #220 from JaCraig/dependabot/github_actions/dependencies-18190d55f2 ([0a070c4](https://www.github.com/JaCraig/TestFountain/commit/0a070c490e9e548b32c1d97b5073d30c20fd74bf))
+* Merge pull request #221 from JaCraig/dependabot/nuget/dependencies-7328e31875 ([89282e7](https://www.github.com/JaCraig/TestFountain/commit/89282e755afceb8dff3400381112a5b59d8de9b4))
+* bump actions/setup-dotnet in the dependencies group ([389fda4](https://www.github.com/JaCraig/TestFountain/commit/389fda482772b77c0948061fd021145c0b7ed0d4))
+* update versionize command in dotnet-publish.yml ([3203f49](https://www.github.com/JaCraig/TestFountain/commit/3203f49fd181bdd398553bcb9c813988f91a3a48))
+
 <a name="2.0.175"></a>
 ## [2.0.175](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.175) (2024-10-14)
 

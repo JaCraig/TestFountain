@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.178"></a>
+## [2.0.178](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.178) (2024-10-30)
+
+### Bug Fixes
+
+* bump FileCurator from 4.1.8 to 4.1.9 in the dependencies group ([6fefa67](https://www.github.com/JaCraig/TestFountain/commit/6fefa67a0a611b66f2728a20d49b853545c3db1a))
+
+### Other
+
+* Merge pull request #223 from JaCraig/dependabot/nuget/dependencies-7444e6ab7d ([cb877da](https://www.github.com/JaCraig/TestFountain/commit/cb877da450b3431d4902d6a8ddd65ac06172725a))
+
 <a name="2.0.177"></a>
 ## [2.0.177](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.177) (2024-10-29)
 

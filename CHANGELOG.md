@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.181"></a>
+## [2.0.181](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.181) (2024-11-08)
+
+### Bug Fixes
+
+* bump FluentAssertions in the dependencies group ([b9ff911](https://www.github.com/JaCraig/TestFountain/commit/b9ff911c37a808ad7ef49b2d58af0dbfabd5de2d))
+
+### Other
+
+* Merge pull request #226 from JaCraig/dependabot/nuget/dependencies-08860afd26 ([4365743](https://www.github.com/JaCraig/TestFountain/commit/43657436e35c6cfdcae27eaa24af3167a248f1a0))
+
 <a name="2.0.180"></a>
 ## [2.0.180](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.180) (2024-11-05)
 

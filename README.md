@@ -16,7 +16,7 @@ TestFountain is a C# library that provides an attribute for [xUnit.Net](https://
 
 ### Prerequisites
 
-- .NET 6
+- .NET 8.0 or later
 
 ### Installation
 

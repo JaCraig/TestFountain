@@ -15,6 +15,10 @@ limitations under the License.
 */
 
 using Canister.Interfaces;
+using SerialBox.Registration;
+using TestFountain.DataSources.Interfaces;
+using TestFountain.Generator;
+using TestFountain.Generator.Interfaces;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -34,6 +38,19 @@ namespace Microsoft.Extensions.DependencyInjection
                                 .RegisterFileCurator()
                                 .RegisterMirage()
                                 .RegisterSerialBox();
+        }
+
+        /// <summary>
+        /// Registers the TestFountain services with the specified IServiceCollection.
+        /// </summary>
+        /// <param name="services">The IServiceCollection to add the services to.</param>
+        /// <returns>The IServiceCollection with the registered services.</returns>
+        public static IServiceCollection? RegisterTestFountain(this IServiceCollection? services)
+        {
+            return services
+                ?.AddAllTransient<IGenerator>()
+                ?.AddAllTransient<IDatasource>()
+                ?.AddTransient<GeneratorManager>();
         }
     }
 }

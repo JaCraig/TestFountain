@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.0.0"></a>
+## [3.0.0](https://www.github.com/JaCraig/TestFountain/releases/tag/v3.0.0) (2024-11-23)
+
+### Features
+
+* Update workflows, dependencies, and target frameworks ([0dda947](https://www.github.com/JaCraig/TestFountain/commit/0dda9479eb9b3ad875762f94d7c7f3ca7735761b))
+
+### Breaking Changes
+
+* Update workflows, dependencies, and target frameworks ([0dda947](https://www.github.com/JaCraig/TestFountain/commit/0dda9479eb9b3ad875762f94d7c7f3ca7735761b))
+
+### Other
+
+* Merge pull request #230 from JaCraig/dependabot/nuget/TestFountain.Example/dependencies-617062173c ([3bf3cdb](https://www.github.com/JaCraig/TestFountain/commit/3bf3cdb7b38840e3c7e36eecb6c6a77433587662))
+* Merge pull request #231 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-617062173c ([ccc3b29](https://www.github.com/JaCraig/TestFountain/commit/ccc3b292ee5e0105857c822e86a47f454a97b0b2))
+* bump Microsoft.NET.Test.Sdk ([f58c209](https://www.github.com/JaCraig/TestFountain/commit/f58c209211c455f732b4892ccc96d3a883dfb5ea))
+* bump Microsoft.NET.Test.Sdk ([d37a8df](https://www.github.com/JaCraig/TestFountain/commit/d37a8df1fedeceaf1efcd4a4a2c2c60a6160d0e3))
+
 <a name="2.0.184"></a>
 ## [2.0.184](https://www.github.com/JaCraig/TestFountain/releases/tag/v2.0.184) (2024-11-14)
 

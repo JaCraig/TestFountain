@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.0"></a>
+## [4.0.0](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.0) (2024-11-24)
+
+### Bug Fixes
+
+* Update .editorconfig, CanisterMethods, and package versions ([97a9ad7](https://www.github.com/JaCraig/TestFountain/commit/97a9ad71204a9a4e3c765b080cf45b56961475d3))
+
+### Breaking Changes
+
+* Update .editorconfig, CanisterMethods, and package versions ([97a9ad7](https://www.github.com/JaCraig/TestFountain/commit/97a9ad71204a9a4e3c765b080cf45b56961475d3))
+
 <a name="3.0.0"></a>
 ## [3.0.0](https://www.github.com/JaCraig/TestFountain/releases/tag/v3.0.0) (2024-11-23)
 

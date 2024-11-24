@@ -47,10 +47,15 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <returns>The IServiceCollection with the registered services.</returns>
         public static IServiceCollection? RegisterTestFountain(this IServiceCollection? services)
         {
+            if (services.Exists<GeneratorManager>())
+                return services;
             return services
                 ?.AddAllTransient<IGenerator>()
                 ?.AddAllTransient<IDatasource>()
-                ?.AddTransient<GeneratorManager>();
+                ?.AddTransient<GeneratorManager>()
+                ?.RegisterSerialBox()
+                ?.RegisterMirage()
+                ?.RegisterFileCurator();
         }
     }
 }

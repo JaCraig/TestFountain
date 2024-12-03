@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.1"></a>
+## [4.0.1](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.1) (2024-12-03)
+
+### Bug Fixes
+
+* bump FluentAssertions in /TestFountain in the dependencies group ([a117cf2](https://www.github.com/JaCraig/TestFountain/commit/a117cf2141105a7c5296f59d5e806784f0edeba9))
+
+### Other
+
+* Merge pull request #232 from JaCraig/dependabot/nuget/TestFountain/dependencies-8c8b2232d5 ([0a6c4f4](https://www.github.com/JaCraig/TestFountain/commit/0a6c4f46dfd8d293ed4864ebeed99f5cab39b329))
+* Merge pull request #233 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-8c8b2232d5 ([882414b](https://www.github.com/JaCraig/TestFountain/commit/882414b72607c6200c1efff6d8156407becffc16))
+* bump FluentAssertions ([ccbcd32](https://www.github.com/JaCraig/TestFountain/commit/ccbcd321dc91423ae25f1f68db0fa72c0dfe58c6))
+
 <a name="4.0.0"></a>
 ## [4.0.0](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.0) (2024-11-24)
 

@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.2"></a>
+## [4.0.2](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.2) (2024-12-06)
+
+### Bug Fixes
+
+* bump husky in /TestFountain in the dependencies group ([3377460](https://www.github.com/JaCraig/TestFountain/commit/33774603e05ba90e6e48784ff8a17302baa2f09b))
+
+### Other
+
+* Merge pull request #234 from JaCraig/dependabot/nuget/TestFountain/dependencies-0eb5dce03c ([853f9ba](https://www.github.com/JaCraig/TestFountain/commit/853f9ba72d31c757b749e701c34ec9eaa9ab8345))
+
 <a name="4.0.1"></a>
 ## [4.0.1](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.1) (2024-12-03)
 

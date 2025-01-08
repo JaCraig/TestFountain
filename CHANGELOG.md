@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.5"></a>
+## [4.0.5](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.5) (2025-01-08)
+
+### Bug Fixes
+
+* bump xunit.extensibility.core ([8eb10a1](https://www.github.com/JaCraig/TestFountain/commit/8eb10a1cd05b91ec6b5d2e40b2d2910e4ac6b831))
+
+### Other
+
+* Merge pull request #237 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-637ad84d5b ([a113546](https://www.github.com/JaCraig/TestFountain/commit/a1135467ad86b12a95b087840e1efa46bc5fbe75))
+* Merge pull request #238 from JaCraig/dependabot/nuget/TestFountain.Example/dependencies-637ad84d5b ([d914d03](https://www.github.com/JaCraig/TestFountain/commit/d914d03d093d5f2c2952e92e6913713b427e8434))
+* Merge pull request #239 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-37a7915f86 ([6d900c9](https://www.github.com/JaCraig/TestFountain/commit/6d900c99262765876687a3d11afa03526f65f549))
+* Merge pull request #240 from JaCraig/dependabot/nuget/TestFountain/dependencies-1ce74e98d3 ([5e05b3f](https://www.github.com/JaCraig/TestFountain/commit/5e05b3fde360de70f91b5d4f239b2b29fa764283))
+* bump the dependencies group in /TestFountain.Tests with 2 updates ([7f7fd8a](https://www.github.com/JaCraig/TestFountain/commit/7f7fd8ace4818dd45b473d3c73d9ffc7f858c565))
+* bump xunit.runner.visualstudio ([f137758](https://www.github.com/JaCraig/TestFountain/commit/f13775832d06480778346fb2044a8654dd47676a))
+* bump xunit.runner.visualstudio ([0621874](https://www.github.com/JaCraig/TestFountain/commit/062187445fa7e7d7c7384034525d1b3edcd28fb9))
+
 <a name="4.0.4"></a>
 ## [4.0.4](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.4) (2024-12-10)
 

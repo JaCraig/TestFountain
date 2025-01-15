@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.6"></a>
+## [4.0.6](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.6) (2025-01-15)
+
+### Bug Fixes
+
+* **tests:** replace FluentAssertions with Xunit assertions ([0003fe1](https://www.github.com/JaCraig/TestFountain/commit/0003fe1824a33887ea90c145734f17ea1d62ee11))
+
+### Other
+
+* Merge pull request #241 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-dac939b906 ([247c836](https://www.github.com/JaCraig/TestFountain/commit/247c83623a99b292f68bee1cb30acc760b29d3cf))
+* Merge pull request #242 from JaCraig/dependabot/nuget/TestFountain.Example/dependencies-dac939b906 ([3d49e1f](https://www.github.com/JaCraig/TestFountain/commit/3d49e1f6d0bef208cebf60f0401aaeb00bf76f54))
+* Merge pull request #243 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-4654877757 ([fa302ba](https://www.github.com/JaCraig/TestFountain/commit/fa302ba4e2ff7c16197f7a56bd0270b65264e9b1))
+* Merge pull request #244 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-955fcb2e58 ([b823f4c](https://www.github.com/JaCraig/TestFountain/commit/b823f4c5261d0c344e880af2328ffbea33ef8763))
+* Merge pull request #245 from JaCraig/dependabot/nuget/TestFountain.Example/dependencies-955fcb2e58 ([e6e67ff](https://www.github.com/JaCraig/TestFountain/commit/e6e67ff6c0cd7b1de34330c09b384bdb97990b44))
+* bump Mirage in /TestFountain.Tests in the dependencies group ([99a5f24](https://www.github.com/JaCraig/TestFountain/commit/99a5f24224c9aa59cf179ee20810c2a6389eb141))
+* bump xunit in /TestFountain.Example in the dependencies group ([a1b8413](https://www.github.com/JaCraig/TestFountain/commit/a1b841382309ce9fd87feca7c9a762171c9836d9))
+* bump xunit in /TestFountain.Tests in the dependencies group ([565b55d](https://www.github.com/JaCraig/TestFountain/commit/565b55d2b14c6964269d2be15ab81ead403f21fb))
+* bump xunit.runner.visualstudio ([1bc8721](https://www.github.com/JaCraig/TestFountain/commit/1bc872102c7097ac86df0b173b0572d059edcbd8))
+* bump xunit.runner.visualstudio ([d12aab2](https://www.github.com/JaCraig/TestFountain/commit/d12aab2588239f9d6cb3cad95651e7435fcb6b4c))
+
 <a name="4.0.5"></a>
 ## [4.0.5](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.5) (2025-01-08)
 

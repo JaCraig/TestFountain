@@ -1,5 +1,4 @@
-﻿using FluentAssertions;
-using System.Linq;
+﻿using System.Linq;
 using TestFountain.Tests.BaseClasses;
 using Xunit;
 
@@ -11,9 +10,9 @@ namespace TestFountain.Tests
         public void Creation()
         {
             var TestObject = new FountainDataAttribute(1);
-            _ = TestObject.Should().NotBeNull();
-            _ = TestObject.Count.Should().Be(1);
-            _ = TestObject.MaxDuration.Should().Be(int.MaxValue);
+            Assert.NotNull(TestObject);
+            Assert.Equal(1, TestObject.Count);
+            Assert.Equal(int.MaxValue, TestObject.MaxDuration);
         }
 
         [Fact]
@@ -21,9 +20,11 @@ namespace TestFountain.Tests
         {
             var TestObject = new FountainDataAttribute(1);
             System.Collections.Generic.IEnumerable<object[]> Data = TestObject.GetData(typeof(TestClass).GetMethod("TestMethod"));
-            _ = Data.Should().NotBeNullOrEmpty();
-            _ = Data.Should().ContainSingle();
-            _ = Data.First().Should().NotBeNullOrEmpty();
+            Assert.NotNull(Data);
+            Assert.NotEmpty(Data);
+            _ = Assert.Single(Data);
+            Assert.NotNull(Data.First());
+            Assert.NotEmpty(Data.First());
         }
 
         private class TestClass

@@ -1,5 +1,4 @@
-﻿using FluentAssertions;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using TestFountain.Generator.DefaultGenerators;
 using TestFountain.Tests.BaseClasses;
 using Xunit;
@@ -13,14 +12,14 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
         {
             var TestObject = new DefaultGenerator(Services.GetService<Mirage.Random>());
 
-            _ = TestObject.CanGenerate(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]).Should().BeTrue();
+            Assert.True(TestObject.CanGenerate(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]));
         }
 
         [Fact]
         public void Creation()
         {
             var TestObject = new DefaultGenerator(Services.GetService<Mirage.Random>());
-            _ = TestObject.Should().NotBeNull();
+            Assert.NotNull(TestObject);
         }
 
         [Fact]
@@ -28,8 +27,8 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
         {
             var TestObject = new DefaultGenerator(Services.GetService<Mirage.Random>());
             var Result = TestObject.Next(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]);
-            _ = Result.Should().BeOfType<string>();
-            _ = Result.Should().NotBeNull();
+            Assert.NotNull(Result);
+            _ = Assert.IsType<string>(Result);
         }
 
         private class TestClass

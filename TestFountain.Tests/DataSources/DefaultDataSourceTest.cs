@@ -1,5 +1,4 @@
 ﻿using FileCurator;
-using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
 using TestFountain.DataSources;
 using TestFountain.Tests.BaseClasses;
@@ -13,8 +12,8 @@ namespace TestFountain.Tests.DataSources
         public void Creation()
         {
             var TestObject = new DefaultDataSource(Services.GetService<SerialBox.SerialBox>());
-            _ = TestObject.Should().NotBeNull();
-            _ = TestObject.SerialBox.Should().NotBeNull();
+            Assert.NotNull(TestObject);
+            Assert.NotNull(TestObject.SerialBox);
         }
 
         [Fact]

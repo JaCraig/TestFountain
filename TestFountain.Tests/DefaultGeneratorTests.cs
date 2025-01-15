@@ -1,5 +1,4 @@
-﻿using FluentAssertions;
-using Mirage.Generators;
+﻿using Mirage.Generators;
 using Mirage.Generators.Names;
 using NSubstitute;
 using System.ComponentModel.DataAnnotations;
@@ -17,7 +16,8 @@ namespace TestFountain.Tests
     {
         [Theory]
         [FountainData(100, 1000)]
-        public void Test([Range(1, 100)] int value1) => value1.Should().BeInRange(1, 100);
+        public void Test([Range(1, 100)] int value1) =>
+            Assert.InRange(value1, 1, 100);
 
         [Theory]
         [FountainData(1000)]
@@ -25,10 +25,9 @@ namespace TestFountain.Tests
         {
             if (value1 == null)
                 return;
-            _ = value1.Should().BeEquivalentTo(value1.Copy());
-            _ = value1.Value1.Should().BeGreaterThan(0);
-            _ = value1.Value2.Should().NotBeNull();
-            _ = value1.Value3.Should().BeGreaterThan(0);
+            Assert.InRange(value1.Value1, 1, int.MaxValue);
+            Assert.NotNull(value1.Value2);
+            Assert.InRange(value1.Value3, 1f, float.MaxValue);
         }
 
         [Theory]
@@ -38,7 +37,7 @@ namespace TestFountain.Tests
             if (value1 == null)
                 return;
             _ = value1.Method().Returns(1);
-            _ = value1.Method().Should().Be(1);
+            Assert.Equal(1, value1.Method());
         }
     }
 

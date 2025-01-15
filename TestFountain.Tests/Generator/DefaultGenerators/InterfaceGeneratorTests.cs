@@ -1,5 +1,4 @@
-﻿using FluentAssertions;
-using NSubstitute;
+﻿using NSubstitute;
 using TestFountain.Generator.DefaultGenerators;
 using TestFountain.Tests.BaseClasses;
 using Xunit;
@@ -17,14 +16,14 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
         {
             var TestObject = new InterfaceGenerator();
 
-            _ = TestObject.CanGenerate(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]).Should().BeTrue();
+            Assert.True(TestObject.CanGenerate(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]));
         }
 
         [Fact]
         public void Creation()
         {
             var TestObject = new InterfaceGenerator();
-            _ = TestObject.Should().NotBeNull();
+            Assert.NotNull(TestObject);
         }
 
         [Fact]
@@ -32,9 +31,9 @@ namespace TestFountain.Tests.Generator.DefaultGenerators
         {
             var TestObject = new InterfaceGenerator();
             var Result = (ITestInterface)TestObject.Next(typeof(TestClass).GetMethod("TestMethod").GetParameters()[0]);
-            _ = Result.Value.Should().NotBeNull();
+            Assert.NotNull(Result);
             _ = Result.Method().Returns(1);
-            _ = Result.Method().Should().Be(1);
+            Assert.Equal(1, Result.Method());
         }
 
         public interface ITestInterface

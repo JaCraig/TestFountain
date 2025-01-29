@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.8"></a>
+## [4.0.8](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.8) (2025-01-29)
+
+### Bug Fixes
+
+* bump FileCurator in /TestFountain in the dependencies group ([81e84e7](https://www.github.com/JaCraig/TestFountain/commit/81e84e72bbb6211e00b154c847fe6e5ce00af946))
+
+### Other
+
+* Merge pull request #252 from JaCraig/dependabot/nuget/TestFountain/dependencies-b23f8c52ef ([9f3dcb4](https://www.github.com/JaCraig/TestFountain/commit/9f3dcb443b226acf811f3c2c1186aca1f78682df))
+
 <a name="4.0.7"></a>
 ## [4.0.7](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.7) (2025-01-28)
 

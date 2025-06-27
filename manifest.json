@@ -18,7 +18,11 @@
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.CanisterMethods.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection.CanisterMethods",
+      "Summary": "<p sourcefile=\"api/Microsoft.Extensions.DependencyInjection.CanisterMethods.yml\" sourcestartlinenumber=\"1\">Canister methods</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -28,7 +32,11 @@
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -38,7 +46,11 @@
           "relative_path": "api/TestFountain.CanisterModules.GeneratorModule.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.CanisterModules.GeneratorModule",
+      "Summary": "<p sourcefile=\"api/TestFountain.CanisterModules.GeneratorModule.yml\" sourcestartlinenumber=\"1\">Generator module</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -48,7 +60,11 @@
           "relative_path": "api/TestFountain.CanisterModules.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.CanisterModules",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -58,7 +74,11 @@
           "relative_path": "api/TestFountain.DataSources.DefaultDataSource.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.DataSources.DefaultDataSource",
+      "Summary": "<p sourcefile=\"api/TestFountain.DataSources.DefaultDataSource.yml\" sourcestartlinenumber=\"1\">Default data source.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -68,7 +88,11 @@
           "relative_path": "api/TestFountain.DataSources.Interfaces.IDatasource.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.DataSources.Interfaces.IDatasource",
+      "Summary": "<p sourcefile=\"api/TestFountain.DataSources.Interfaces.IDatasource.yml\" sourcestartlinenumber=\"1\">Data source interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -78,7 +102,11 @@
           "relative_path": "api/TestFountain.DataSources.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.DataSources.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -88,7 +116,11 @@
           "relative_path": "api/TestFountain.DataSources.Serializers.JsonNetSerializer.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.DataSources.Serializers.JsonNetSerializer",
+      "Summary": "<p sourcefile=\"api/TestFountain.DataSources.Serializers.JsonNetSerializer.yml\" sourcestartlinenumber=\"1\">JSON.Net Serializer</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -98,7 +130,11 @@
           "relative_path": "api/TestFountain.DataSources.Serializers.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.DataSources.Serializers",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -108,7 +144,11 @@
           "relative_path": "api/TestFountain.DataSources.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.DataSources",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -118,7 +158,11 @@
           "relative_path": "api/TestFountain.Exceptions.GeneratorException.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Exceptions.GeneratorException",
+      "Summary": "<p sourcefile=\"api/TestFountain.Exceptions.GeneratorException.yml\" sourcestartlinenumber=\"1\">Generator exception</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -128,7 +172,11 @@
           "relative_path": "api/TestFountain.Exceptions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Exceptions",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -138,7 +186,11 @@
           "relative_path": "api/TestFountain.FountainDataAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.FountainDataAttribute",
+      "Summary": "<p sourcefile=\"api/TestFountain.FountainDataAttribute.yml\" sourcestartlinenumber=\"1\">Data generator class used in theory methods.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -148,7 +200,11 @@
           "relative_path": "api/TestFountain.Generator.DefaultGenerators.BoundaryGenerator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Generator.DefaultGenerators.BoundaryGenerator",
+      "Summary": "<p sourcefile=\"api/TestFountain.Generator.DefaultGenerators.BoundaryGenerator.yml\" sourcestartlinenumber=\"1\">Boundary generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -158,7 +214,11 @@
           "relative_path": "api/TestFountain.Generator.DefaultGenerators.DefaultGenerator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Generator.DefaultGenerators.DefaultGenerator",
+      "Summary": "<p sourcefile=\"api/TestFountain.Generator.DefaultGenerators.DefaultGenerator.yml\" sourcestartlinenumber=\"1\">Default generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -168,7 +228,11 @@
           "relative_path": "api/TestFountain.Generator.DefaultGenerators.DefaultValueGenerator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Generator.DefaultGenerators.DefaultValueGenerator",
+      "Summary": "<p sourcefile=\"api/TestFountain.Generator.DefaultGenerators.DefaultValueGenerator.yml\" sourcestartlinenumber=\"1\">Default value generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -178,7 +242,11 @@
           "relative_path": "api/TestFountain.Generator.DefaultGenerators.InterfaceGenerator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Generator.DefaultGenerators.InterfaceGenerator",
+      "Summary": "<p sourcefile=\"api/TestFountain.Generator.DefaultGenerators.InterfaceGenerator.yml\" sourcestartlinenumber=\"1\">Interface generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -188,7 +256,11 @@
           "relative_path": "api/TestFountain.Generator.DefaultGenerators.ParameterDefaultValueGenerator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Generator.DefaultGenerators.ParameterDefaultValueGenerator",
+      "Summary": "<p sourcefile=\"api/TestFountain.Generator.DefaultGenerators.ParameterDefaultValueGenerator.yml\" sourcestartlinenumber=\"1\">Parameter default value generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -198,7 +270,11 @@
           "relative_path": "api/TestFountain.Generator.DefaultGenerators.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Generator.DefaultGenerators",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -208,7 +284,11 @@
           "relative_path": "api/TestFountain.Generator.GeneratorManager.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Generator.GeneratorManager",
+      "Summary": "<p sourcefile=\"api/TestFountain.Generator.GeneratorManager.yml\" sourcestartlinenumber=\"1\">Generator manager</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -218,7 +298,11 @@
           "relative_path": "api/TestFountain.Generator.Interfaces.IGenerator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Generator.Interfaces.IGenerator",
+      "Summary": "<p sourcefile=\"api/TestFountain.Generator.Interfaces.IGenerator.yml\" sourcestartlinenumber=\"1\">Generator interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -228,7 +312,11 @@
           "relative_path": "api/TestFountain.Generator.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Generator.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -238,7 +326,11 @@
           "relative_path": "api/TestFountain.Generator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain.Generator",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -248,7 +340,11 @@
           "relative_path": "api/TestFountain.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestFountain",
+      "Summary": null
     },
     {
       "type": "Conceptual",

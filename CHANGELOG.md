@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.9"></a>
+## [4.0.9](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.9) (2025-06-27)
+
+### Bug Fixes
+
+* **dependencies:** update package versions in project files ([4b74872](https://www.github.com/JaCraig/TestFountain/commit/4b74872cc93f34fc9207590f714dfc932e40ded3))
+
 <a name="4.0.8"></a>
 ## [4.0.8](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.8) (2025-01-29)
 

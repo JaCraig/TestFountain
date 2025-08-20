@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.12"></a>
+## [4.0.12](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.12) (2025-08-20)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([86b4ba5](https://www.github.com/JaCraig/TestFountain/commit/86b4ba534cda71e8935e06e4c734e5fe401753f5))
+
+### Other
+
+* Merge pull request #263 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-f156b3ddd2 ([d63592c](https://www.github.com/JaCraig/TestFountain/commit/d63592c4100f8041859194546506e64e7157597b))
+* Merge pull request #264 from JaCraig/dependabot/nuget/TestFountain.Example/dependencies-f156b3ddd2 ([b25a1b2](https://www.github.com/JaCraig/TestFountain/commit/b25a1b24b7b3e9afde398f360d71dd8a53096c73))
+* Merge pull request #265 from JaCraig/dependabot/nuget/TestFountain/dependencies-c7879f62da ([9588e7f](https://www.github.com/JaCraig/TestFountain/commit/9588e7f2c6cdfb5e4183663b0e17febe4f33e06f))
+* Merge pull request #266 from JaCraig/dependabot/nuget/TestFountain/dependencies-c7879f62da ([f7d3913](https://www.github.com/JaCraig/TestFountain/commit/f7d39137edc158e701df6ad58c0b74ac359f650c))
+* Merge pull request #267 from JaCraig/dependabot/nuget/TestFountain/dependencies-c7879f62da ([4afa026](https://www.github.com/JaCraig/TestFountain/commit/4afa026ece826e396a55f3b98e603428869cff0a))
+* Bump the dependencies group with 1 update ([a9ba3fc](https://www.github.com/JaCraig/TestFountain/commit/a9ba3fca74967c597b4d1bd0c2da1ce4a5b3a0e0))
+* Bump the dependencies group with 1 update ([b574068](https://www.github.com/JaCraig/TestFountain/commit/b57406888b81872637977c60a928559a7492fe30))
+* Bump the dependencies group with 2 updates ([39723bb](https://www.github.com/JaCraig/TestFountain/commit/39723bb0b8246e32b2d1111ef49012f3dc24c630))
+* Bump the dependencies group with 2 updates ([a5a1c5b](https://www.github.com/JaCraig/TestFountain/commit/a5a1c5b7d517ceeb82239a3d9089fd57a9745ddb))
+
 <a name="4.0.11"></a>
 ## [4.0.11](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.11) (2025-08-19)
 

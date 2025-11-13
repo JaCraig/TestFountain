@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.18"></a>
+## [4.0.18](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.18) (2025-11-13)
+
+### Bug Fixes
+
+* Bump the dependencies group with 3 updates ([fe5b8ea](https://www.github.com/JaCraig/TestFountain/commit/fe5b8ead148503a04c667c7a9a5a134def175968))
+
+### Other
+
+* Merge pull request #294 from JaCraig/dependabot/nuget/TestFountain/dependencies-abe5081d6b ([5c72dbf](https://www.github.com/JaCraig/TestFountain/commit/5c72dbf2142816823ddf8db441a7f5e5952f7285))
+* Merge pull request #295 from JaCraig/dependabot/nuget/TestFountain.Example/dependencies-f078703165 ([b3682b8](https://www.github.com/JaCraig/TestFountain/commit/b3682b897b26c0916cb401edc94e408fa9db67f2))
+* Merge pull request #296 from JaCraig/dependabot/nuget/dot-config/dependencies-0b6a35b5df ([e758f66](https://www.github.com/JaCraig/TestFountain/commit/e758f66601069b7202235593ae8a87b457fc825e))
+* Merge pull request #297 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-f078703165 ([3b7e94b](https://www.github.com/JaCraig/TestFountain/commit/3b7e94b7ad93e6cc5ca0cbf58a4761ec1f5ae909))
+* Merge pull request #298 from JaCraig/dependabot/nuget/dot-config/dependencies-3233b7c6a5 ([6114af2](https://www.github.com/JaCraig/TestFountain/commit/6114af2b9253d288324d25fa001c6668331036b1))
+* Bump husky from 0.7.2 to 0.8.0 ([f6b4040](https://www.github.com/JaCraig/TestFountain/commit/f6b4040fad08c5a3e9efca93352df3858569db5b))
+* Bump Microsoft.CodeAnalysis.NetAnalyzers from 9.0.0 to 10.0.100 ([2019520](https://www.github.com/JaCraig/TestFountain/commit/2019520f9bfb7fdac0b95e1fcacd6312088a2e70))
+* Bump Microsoft.NET.Test.Sdk from 18.0.0 to 18.0.1 ([c1cf922](https://www.github.com/JaCraig/TestFountain/commit/c1cf9224eb83b0c4e56e21e0aaba457485ef0f86))
+* Bump Microsoft.NET.Test.Sdk from 18.0.0 to 18.0.1 ([12ca9ee](https://www.github.com/JaCraig/TestFountain/commit/12ca9eefa0953e672ddfba7cc4a612ae1125af92))
+
 <a name="4.0.17"></a>
 ## [4.0.17](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.17) (2025-10-15)
 

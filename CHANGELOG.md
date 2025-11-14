@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.19"></a>
+## [4.0.19](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.19) (2025-11-14)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([1e76118](https://www.github.com/JaCraig/TestFountain/commit/1e76118da6a8ffd8ec0407ba841d54a13daf59a6))
+
+### Other
+
+* Merge pull request #299 from JaCraig/dependabot/nuget/TestFountain/dependencies-2692dee067 ([c5b78f8](https://www.github.com/JaCraig/TestFountain/commit/c5b78f86d5ec1cf6551e3111c10fb5d3edbc2c0f))
+* Specify languages for CodeQL analysis ([9131686](https://www.github.com/JaCraig/TestFountain/commit/91316864e243b307cd46724fe6f466d3a526815a))
+
 <a name="4.0.18"></a>
 ## [4.0.18](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.18) (2025-11-13)
 

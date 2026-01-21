@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.28"></a>
+## [4.0.28](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.28) (2026-01-21)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([b140726](https://www.github.com/JaCraig/TestFountain/commit/b1407265c2ab99ba354b587accc07f7cc11d79bb))
+
+### Other
+
+* Merge pull request #313 from JaCraig/dependabot/nuget/TestFountain/dependencies-76fb12e624 ([a19974f](https://www.github.com/JaCraig/TestFountain/commit/a19974fff652e88251b2c2652dcc7277e8344950))
+
 <a name="4.0.27"></a>
 ## [4.0.27](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.27) (2026-01-20)
 

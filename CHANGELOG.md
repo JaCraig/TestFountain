@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.31"></a>
+## [4.0.31](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.31) (2026-02-10)
+
+### Bug Fixes
+
+* Bump the dependencies group with 2 updates ([c79371c](https://www.github.com/JaCraig/TestFountain/commit/c79371c6cb49f00ffcd7b9c095debe43c56ae77e))
+
+### Other
+
+* Merge pull request #320 from JaCraig/dependabot/nuget/TestFountain/dependencies-a5bc480f90 ([6bb2d0e](https://www.github.com/JaCraig/TestFountain/commit/6bb2d0e8cdd7858127ddb063501f82599a3b718d))
+* Merge pull request #321 from JaCraig/dependabot/nuget/TestFountain/dependencies-a5bc480f90 ([240b8c5](https://www.github.com/JaCraig/TestFountain/commit/240b8c52efbb803fc63076d2e5eea2674f5c105f))
+* Bump the dependencies group with 2 updates ([8a999ac](https://www.github.com/JaCraig/TestFountain/commit/8a999aca2a8672c85aefd3e6f6ca59963edee003))
+
 <a name="4.0.30"></a>
 ## [4.0.30](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.30) (2026-02-04)
 

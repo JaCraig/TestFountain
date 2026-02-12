@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.1.0"></a>
+## [4.1.0](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.1.0) (2026-02-12)
+
+### Features
+
+* **project:** add net10.0 support and update Mirage ([116dadf](https://www.github.com/JaCraig/TestFountain/commit/116dadf80643d70f59c37d7a2483ce96a1d21d2f))
+
 <a name="4.0.32"></a>
 ## [4.0.32](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.0.32) (2026-02-11)
 

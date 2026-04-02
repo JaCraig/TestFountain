@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.1.9"></a>
+## [4.1.9](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.1.9) (2026-04-02)
+
+### Bug Fixes
+
+* Bump the dependencies group with 3 updates ([c43c4f1](https://www.github.com/JaCraig/TestFountain/commit/c43c4f180dcdb2240b9ebc1ccadd52a69e69d379))
+
+### Other
+
+* Merge pull request #349 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-4bb5c90d9e ([d5a043b](https://www.github.com/JaCraig/TestFountain/commit/d5a043bc3fa794441b536ef837a1093d47f8db1f))
+* Merge pull request #350 from JaCraig/dependabot/nuget/TestFountain/dependencies-3217512b1a ([1274cd7](https://www.github.com/JaCraig/TestFountain/commit/1274cd75d70019345c32c2471237d46b101f3656))
+* Bump the dependencies group with 2 updates ([a0fc8a8](https://www.github.com/JaCraig/TestFountain/commit/a0fc8a896ab494c24bf7a6f3d0516070840b2bd6))
+* **dependabot:** update schedule from daily to weekly ([aaea1be](https://www.github.com/JaCraig/TestFountain/commit/aaea1be8f87a920f9ab54f54618f2847c5c3e895))
+
 <a name="4.1.8"></a>
 ## [4.1.8](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.1.8) (2026-03-16)
 

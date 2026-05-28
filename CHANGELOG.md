@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.1.16"></a>
+## [4.1.16](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.1.16) (2026-05-28)
+
+### Bug Fixes
+
+* **workflows:** remove PERSONAL_ACCESS_TOKEN from workflows ([1d9071e](https://www.github.com/JaCraig/TestFountain/commit/1d9071ef18a3824ce275a3d6c6258cf928ee9d3c))
+
+### Other
+
+* Merge pull request #369 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-ee57b3e2d2 ([354e160](https://www.github.com/JaCraig/TestFountain/commit/354e16079a4b8501fb317a8fcc5a9f7188cacf48))
+* Bump the dependencies group with 5 updates ([e0e6b64](https://www.github.com/JaCraig/TestFountain/commit/e0e6b6417b08776cc40032d1dbf76d2cb70a6293))
+
 <a name="4.1.15"></a>
 ## [4.1.15](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.1.15) (2026-05-21)
 

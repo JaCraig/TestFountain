@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.1.18"></a>
+## [4.1.18](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.1.18) (2026-08-19)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([263fb6a](https://www.github.com/JaCraig/TestFountain/commit/263fb6a317b28173e206077c451345bd8d783688))
+* Bump the dependencies group with 2 updates ([c35d532](https://www.github.com/JaCraig/TestFountain/commit/c35d5323ae6f1fc80b6656f8b091a92cd2e09cf4))
+
+### Other
+
+* Merge pull request #380 from JaCraig/dependabot/nuget/TestFountain.Example/dependencies-4aa9edd91c ([f5f66ba](https://www.github.com/JaCraig/TestFountain/commit/f5f66ba7afe2111dc401f1deaeade748e70d4651))
+* Merge pull request #381 from JaCraig/dependabot/nuget/dot-config/dependencies-d580172a4f ([51faa62](https://www.github.com/JaCraig/TestFountain/commit/51faa6216cc8f8a7e85f5ea127feb2e350226a39))
+* Merge pull request #382 from JaCraig/dependabot/nuget/TestFountain/dependencies-b20e82755f ([3460fe2](https://www.github.com/JaCraig/TestFountain/commit/3460fe2d463752941d7bddfc9e9da484e4519ba1))
+* Merge pull request #384 from JaCraig/dependabot/nuget/TestFountain/dependencies-3ac3b4bb44 ([1d8f74a](https://www.github.com/JaCraig/TestFountain/commit/1d8f74a03e2ee50fc3210856cad493d2234dae17))
+* Merge pull request #386 from JaCraig/dependabot/nuget/TestFountain.Tests/dependencies-e99db4f2e2 ([ef02566](https://www.github.com/JaCraig/TestFountain/commit/ef02566ba79c92a6ce3996f40ab8b3c0687aaa49))
+* Bump the dependencies group with 1 update ([a55eed9](https://www.github.com/JaCraig/TestFountain/commit/a55eed9af09e936b32f68518778c247a0f213aef))
+* Bump the dependencies group with 3 updates ([53200ab](https://www.github.com/JaCraig/TestFountain/commit/53200ab40f855adca54994846426cae574da3ce6))
+* Bump the dependencies group with 4 updates ([3b63581](https://www.github.com/JaCraig/TestFountain/commit/3b6358167e9f8607aac3bd5ab90c0ea24dec5061))
+
 <a name="4.1.17"></a>
 ## [4.1.17](https://www.github.com/JaCraig/TestFountain/releases/tag/v4.1.17) (2026-07-16)
 

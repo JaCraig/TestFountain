@@ -52,7 +52,7 @@
 
   <ItemGroup>
     <PackageReference Include="FileCurator" Version="5.2.17" />
-    <PackageReference Include="Mirage" Version="5.1.16" />
+    <PackageReference Include="Mirage" Version="5.1.17" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="NSubstitute" Version="6.2.0" />
     <PackageReference Include="SerialBox" Version="5.1.9" />
